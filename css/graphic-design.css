@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a082d, #07010f);
+  color: white;
+}
+
+/* HEADER */
+.page-header {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.page-header h1 {
+  color: #c77dff;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: #c77dff;
+  font-size: 0.9rem;
+}
+
+/* SECTIONS */
+.portfolio {
+  padding: 2rem;
+}
+
+.section-title {
+  text-align: center;
+  color: #c77dff;
+  margin: 3rem 0 1.5rem;
+  text-shadow: 0 0 10px rgba(199, 125, 255, 0.6);
+}
+
+/* GRID */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.portfolio-grid.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* CARD WRAPPER */
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CARD */
+.portfolio-card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid rgba(157, 78, 221, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(157, 78, 221, 0.8);
+}
+
+/* DURATION BADGE */
+.duration {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 0.7rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: #e0aaff;
+  z-index: 2;
+}
+
+/* TEXT ABOVE PORTFOLIO CARD */
+.card-top-title {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #e0aaff;
+  opacity: 0.85;
+  text-align: center;
+}
+
+/* TEXT UNDER CARD */
+.card-title {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: #e0aaff;
+  opacity: 0.85;
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .portfolio-grid.two {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
