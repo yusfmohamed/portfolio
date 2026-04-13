@@ -4,23 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Graphic Design | Youssef</title>
-
-  <link rel="stylesheet" href="../css/graphic-design.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/graphicdesign.css">
 </head>
 <body>
 
   <!-- HEADER -->
   <header class="page-header">
     <a href="../index.html" class="back-btn">← Back</a>
+    <div class="header-divider"></div>
     <h1>Graphic Design</h1>
   </header>
 
+  <!-- FLOATING NAV PILL -->
+  <nav class="section-nav" id="sectionNav">
+    <button class="nav-btn" onclick="goTo('portfolio')">Portfolio</button>
+    <button class="nav-btn" onclick="goTo('posters')">Posters</button>
+    <button class="nav-btn" onclick="goTo('stories')">Stories</button>
+    <button class="nav-btn" onclick="goTo('artworks')">Artworks</button>
+    <button class="nav-btn" onclick="goTo('seniors')">Seniors Kit</button>
+    <button class="nav-btn" onclick="goTo('exhibitions')">Exhibitions</button>
+  </nav>
+
   <section class="portfolio">
 
-    <!-- PORTFOLIO (UNCHANGED STRUCTURE + TEXT ABOVE) -->
-    <h2 class="section-title">Portfolio</h2>
-
+    <!-- PORTFOLIO -->
+    <h2 class="section-title" id="portfolio">Portfolio</h2>
     <div class="portfolio-grid">
+
       <div class="card-wrapper">
         <p class="card-top-title">Sout Sharq</p>
         <div class="portfolio-card">
@@ -54,55 +66,314 @@
       </div>
 
       <div class="card-wrapper">
-        <p class="card-top-title">Projects
-        </p>
+        <p class="card-top-title">Projects</p>
         <div class="portfolio-card">
           <span class="duration">Freelance</span>
           <img src="../assets/elmalahy.jpg" alt="El Malahy">
         </div>
       </div>
+
     </div>
 
-    <!-- POSTERS -->
-    <h2 class="section-title">Official Posters</h2>
+    <!-- OFFICIAL POSTERS -->
+    <h2 class="section-title" id="posters">Official Posters</h2>
+    <div class="poster-grid">
 
-    <div class="portfolio-grid two">
       <div class="card-wrapper">
-        <div class="portfolio-card">
+        <p class="card-top-title">Cairokee Poster</p>
+        <div class="poster-card" onclick="openLightbox(this)">
+          <img src="../assets/cairoke_poster.jpg" alt="Cairokee Poster">
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Mtown Poster</p>
+        <div class="poster-card" onclick="openLightbox(this)">
           <img src="../assets/mtown_poster.jpg" alt="Mtown Poster">
         </div>
-        <p class="card-title">Mtown Poster</p>
       </div>
 
       <div class="card-wrapper">
-        <div class="portfolio-card">
-          <img src="../assets/cairoke_poster.jpg" alt="Cairoke Poster">
+        <p class="card-top-title">Husayen Poster</p>
+        <div class="poster-card" onclick="openLightbox(this)">
+          <img src="../assets/Husayen poster.jpg" alt="Husayen Poster">
         </div>
-        <p class="card-title">Cairoke Poster</p>
       </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Young Amr Poster</p>
+        <div class="poster-card" onclick="openLightbox(this)">
+          <img src="../assets/young amr poster.jpg" alt="Young Amr Poster">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- STORIES 1080×1920 portrait -->
+    <h2 class="section-title" id="stories">Stories</h2>
+    <div class="stories-grid">
+
+      <!-- To add an image: replace the <div class="story-placeholder">…</div>
+           inside any story-card with: <img src="../assets/YOUR-FILE.jpg" alt="Story 1"> -->
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Story 1</p>
+        <div class="story-card" onclick="openLightbox(this)">
+          <img src="../assets/stories/cairoke story.png" alt="Story 1">
+          <div class="story-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c77dff" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <span>1080 × 1920</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Story 2</p>
+        <div class="story-card" onclick="openLightbox(this)">
+          <img src="../assets/stories/story poster.jpg" alt="Story 2">
+          <div class="story-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c77dff" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <span>1080 × 1920</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Story 3</p>
+        <div class="story-card" onclick="openLightbox(this)">
+          <img src="../assets/stories/husayen story.jpg" alt="Story 3">
+          <div class="story-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c77dff" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <span>1080 × 1920</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Story 4</p>
+        <div class="story-card" onclick="openLightbox(this)">
+          <img src="../assets/stories/young amr story.jpg" alt="Story 4">
+          <div class="story-placeholder">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c77dff" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <span>1080 × 1920</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- OFFICIAL ARTWORKS -->
+    <h2 class="section-title" id="artworks">Official Artworks</h2>
+    <div class="artworks-grid">
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Artwork Title 1</p>
+        <div class="artwork-card" onclick="openLightbox(this)">
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Artwork Title 2</p>
+        <div class="artwork-card" onclick="openLightbox(this)">
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Artwork Title 3</p>
+        <div class="artwork-card" onclick="openLightbox(this)">
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Artwork Title 4</p>
+        <div class="artwork-card" onclick="openLightbox(this)">
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Artwork Title 5</p>
+        <div class="artwork-card" onclick="openLightbox(this)">
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SENIORS KITS x OLYVE 2026 -->
+    <h2 class="section-title" id="seniors">Seniors Kits × Olyve 2026</h2>
+    <div class="seniors-grid">
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Kit 01</p>
+        <div class="seniors-card" onclick="openLightbox(this)">
+          <span class="seniors-badge">OLYVE</span>
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Kit 02</p>
+        <div class="seniors-card" onclick="openLightbox(this)">
+          <span class="seniors-badge">OLYVE</span>
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Kit 03</p>
+        <div class="seniors-card" onclick="openLightbox(this)">
+          <span class="seniors-badge">OLYVE</span>
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Kit 04</p>
+        <div class="seniors-card" onclick="openLightbox(this)">
+          <span class="seniors-badge">OLYVE</span>
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Kit 05</p>
+        <div class="seniors-card" onclick="openLightbox(this)">
+          <span class="seniors-badge">OLYVE</span>
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Kit 06</p>
+        <div class="seniors-card" onclick="openLightbox(this)">
+          <span class="seniors-badge">OLYVE</span>
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Kit 07</p>
+        <div class="seniors-card" onclick="openLightbox(this)">
+          <span class="seniors-badge">OLYVE</span>
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Kit 08</p>
+        <div class="seniors-card" onclick="openLightbox(this)">
+          <span class="seniors-badge">OLYVE</span>
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Kit 09</p>
+        <div class="seniors-card" onclick="openLightbox(this)">
+          <span class="seniors-badge">OLYVE</span>
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
+      <div class="card-wrapper">
+        <p class="card-top-title">Kit 10</p>
+        <div class="seniors-card" onclick="openLightbox(this)">
+          <span class="seniors-badge">OLYVE</span>
+          <div class="img-placeholder"><span>REPLACE</span></div>
+        </div>
+      </div>
+
     </div>
 
     <!-- EXHIBITIONS -->
-    <h2 class="section-title">Exhibitions</h2>
+    <h2 class="section-title" id="exhibitions">Exhibitions</h2>
+    <div class="exhibitions-grid">
 
-    <div class="portfolio-grid two">
       <div class="card-wrapper">
-        <div class="portfolio-card">
+        <div class="portfolio-card" onclick="openLightbox(this)">
           <img src="../assets/zeman awwal.JPG" alt="Exhibition 1">
         </div>
-        <p class="card-title">Zeman Awal at Dubai Air Mall</p>
+        <p class="card-title">Zeman Awal — Dubai Air Mall</p>
       </div>
 
       <div class="card-wrapper">
-        <div class="portfolio-card">
+        <div class="portfolio-card" onclick="openLightbox(this)">
           <img src="../assets/abstraction.jpg" alt="Exhibition 2">
         </div>
         <p class="card-title">Abstraction Exhibition</p>
       </div>
+
     </div>
 
   </section>
 
-  <script src="../js/main.js"></script>
+  <footer>© Youssef Muhhammed — Graphic Design</footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+    /* LIGHTBOX */
+    function openLightbox(card) {
+      const img = card.querySelector('img');
+      if (!img) return;
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) closeLightbox();
+    });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    /* SMOOTH SCROLL NAV */
+    function goTo(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    /* ACTIVE NAV HIGHLIGHT */
+    const sections = ['portfolio','posters','stories','artworks','seniors','exhibitions'];
+    const navBtns  = document.querySelectorAll('.nav-btn');
+
+    function updateNav() {
+      let current = sections[0];
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && window.scrollY >= el.offsetTop - 180) current = id;
+      });
+      navBtns.forEach((btn, i) => btn.classList.toggle('active', sections[i] === current));
+    }
+
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+  </script>
+
 </body>
 </html>

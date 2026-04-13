@@ -1,0 +1,577 @@
+/* ═══════════════════════════════════════════════
+   YOUSSEF MOHAMMED — PORTFOLIO STYLESHEET
+   ═══════════════════════════════════════════════ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ── HEADER ── */
+.page-header {
+  padding: 2.5rem 5% 1.5rem;
+  text-align: center;
+  border-bottom: 4px solid #000;
+  background: #fff;
+}
+
+.page-header h1 {
+  font-family: 'Bebas Neue';
+  font-size: 5.5rem;
+  letter-spacing: 8px;
+  line-height: 1;
+}
+
+.header-subtitle {
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+  margin-top: 0.4rem;
+  opacity: 0.75;
+}
+
+/* ── PROFILE SUMMARY ── */
+.profile-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 2rem 5%;
+  border-bottom: 3px solid #000;
+  background: #f9f9f9;
+}
+
+.profile-avatar {
+  width: 110px;
+  height: 110px;
+  border: 4px solid #000;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue';
+  font-size: 2.8rem;
+  color: #000;
+  overflow: hidden;
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.profile-name {
+  font-family: 'Bebas Neue';
+  font-size: 2.4rem;
+  letter-spacing: 4px;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.profile-role {
+  font-family: 'Oswald';
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  opacity: 0.8;
+}
+
+.profile-bio {
+  font-family: 'Oswald';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.tag {
+  background: #000;
+  color: #fff;
+  padding: 3px 12px;
+  font-size: 0.78rem;
+  font-family: 'Oswald';
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* ── CONTACT BAR ── */
+.contact-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 5%;
+  border-bottom: 3px solid #000;
+  background: #fff;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: 'Oswald';
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.contact-item svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.contact-item:hover {
+  opacity: 0.65;
+}
+
+/* ── PORTFOLIO MAIN ── */
+.portfolio {
+  padding: 3rem 5%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.section {
+  margin-bottom: 5rem;
+  break-inside: avoid;
+}
+
+.section-title {
+  font-family: 'Bebas Neue';
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #000;
+  padding-bottom: 0.6rem;
+  margin: 2rem 0 2rem;
+}
+
+/* ── GRIDS ── */
+.portfolio-grid,
+.poster-grid,
+.artworks-grid,
+.seniors-grid,
+.collab-grid,
+.exhibitions-grid,
+.projects3d-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Stories — 4 columns portrait */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* Social Media Posts — 3 columns portrait */
+.socialmedia-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Photography — fixed 3 columns (3 top + 3 bottom) */
+.photography-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.backscreen-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.card-wrapper {
+  break-inside: avoid;
+}
+
+/* ── BASE CARD ── */
+.portfolio-card,
+.poster-card,
+.story-card,
+.artwork-card,
+.seniors-card,
+.collab-card,
+.exhibition-card,
+.project3d-card,
+.photo-card,
+.socialmedia-card,
+.backscreen-card {
+  border: 3px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+
+/* LOGOS */
+.portfolio-card {
+  height: 200px;
+  padding: 1.5rem;
+}
+
+.portfolio-card img {
+  width: 65%;
+  object-fit: contain;
+}
+
+.duration {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  font-family: 'Oswald';
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* POSTERS */
+.poster-card {
+  aspect-ratio: 1/1;
+}
+
+.poster-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+/* STORIES */
+.story-card {
+  aspect-ratio: 9/16;
+}
+
+.story-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+/* SOCIAL MEDIA POSTS — 1080x1920 portrait */
+.socialmedia-card {
+  aspect-ratio: 9/16;
+}
+
+.socialmedia-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #111;
+}
+
+/* ARTWORKS */
+.artwork-card {
+  aspect-ratio: 1/1;
+}
+
+.artwork-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+/* SENIORS */
+.seniors-card {
+  aspect-ratio: 16/9;
+}
+
+.seniors-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+/* COLLAB */
+.collab-card {
+  aspect-ratio: 16/9;
+}
+
+.collab-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+/* EXHIBITIONS */
+.exhibition-card {
+  aspect-ratio: 4/3;
+}
+
+.exhibition-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #111;
+}
+
+/* 3D PROJECTS — portrait 1080x1920 */
+.project3d-card {
+  aspect-ratio: 9/16;
+}
+
+.project3d-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #111;
+}
+
+/* VISUALS BACKSCREEN — landscape 1920x1080 */
+.backscreen-card {
+  aspect-ratio: 16/9;
+}
+
+.backscreen-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PHOTOGRAPHY — portrait 1080x1920 */
+.photo-card {
+  aspect-ratio: 9/16;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #111;
+}
+
+/* ── PLACEHOLDER ── */
+.placeholder {
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: #999;
+  border: 2px dashed #bbb;
+}
+
+.placeholder svg {
+  width: 40px;
+  height: 40px;
+  opacity: 0.45;
+}
+
+.placeholder span {
+  font-family: 'Oswald';
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* ── CARD TITLES ── */
+.card-top-title {
+  margin-bottom: 0.8rem;
+  font-family: 'Anton';
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card-sub-title {
+  margin-top: 0.7rem;
+  font-family: 'Oswald';
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.card-sub-title a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid #000;
+  padding-bottom: 1px;
+}
+
+.card-sub-title a:hover {
+  opacity: 0.6;
+}
+
+/* ── SECTION DESCRIPTION ── */
+.section-description {
+  font-family: 'Oswald';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+  max-width: 800px;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+}
+
+/* ── BIO BLOCK ── */
+.bio {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.bio a {
+  color: #000;
+  font-weight: 700;
+}
+
+/* ── CLICKABLE LINKS (PDF-FRIENDLY) ── */
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Oswald';
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-top: 4px solid #000;
+}
+
+/* ── PRINT / PDF ── */
+@media print {
+  body {
+    zoom: 0.85;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+
+  .contact-item::after {
+    content: none;
+  }
+
+  .section {
+    page-break-after: always;
+    break-after: page;
+    margin-bottom: 0;
+  }
+
+  .section:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .card-wrapper {
+    break-inside: avoid;
+  }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .stories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .socialmedia-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photography-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 3.5rem;
+  }
+
+  .header-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .profile-summary {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-tags {
+    justify-content: center;
+  }
+
+  .contact-bar {
+    gap: 1.2rem;
+  }
+
+  .contact-item {
+    font-size: 0.85rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .stories-grid,
+  .socialmedia-grid,
+  .photography-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header h1 {
+    font-size: 2.8rem;
+  }
+
+  .stories-grid,
+  .socialmedia-grid,
+  .photography-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
