@@ -567,6 +567,7 @@ footer {
 }
 
 /* ── PRINT / PDF ── */
+/* ── PRINT / PDF FIX ── */
 @media print {
   body {
     zoom: 0.85;
@@ -574,39 +575,53 @@ footer {
     print-color-adjust: exact;
   }
 
-  a {
-    color: #000 !important;
-    text-decoration: underline !important;
-  }
-
-  .contact-item::after {
-    content: none;
-  }
-
   .section {
     page-break-after: always;
     break-after: page;
-    margin-bottom: 0;
   }
 
   .section:last-child {
     page-break-after: auto;
-    break-after: auto;
   }
 
   .card-wrapper {
     break-inside: avoid;
   }
 
-  .collage-grid {
-    grid-template-rows: 200px 240px 150px;
+  /* ✅ FIX COLLAGE FOR PDF */
+  .collage-grid-9 {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+    max-width: 100%;
   }
 
-  .collage-grid-9 {
-    grid-template-rows: 180px 180px auto;
+  /* keep exact layout */
+  .cg-v1, .cg-v2, .cg-v3 {
+    grid-column: span 2;
+    aspect-ratio: 2/3;
+  }
+
+  .cg-s4, .cg-s5, .cg-s6 {
+    grid-column: span 2;
+    aspect-ratio: 1/1;
+  }
+
+  .cg-w7 {
+    grid-column: span 6;
+    aspect-ratio: 2/1;
+  }
+
+  .cg-s8, .cg-s9 {
+    grid-column: span 3;
+    aspect-ratio: 1/1;
+  }
+
+  /* ❌ REMOVE any forced heights */
+  .collage-grid-9,
+  .collage-item {
+    height: auto !important;
   }
 }
-
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .stories-grid {
