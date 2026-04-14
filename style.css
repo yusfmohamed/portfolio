@@ -410,17 +410,20 @@ body {
 .collage-small     { grid-column: 11 / 13; grid-row: 2 / 3; }
 .collage-banner    { grid-column: 1 / 13; grid-row: 3 / 4; }
 
-/* ── COLLAGE GRID 9 (Artworks section - FIXED) ── */
+/* ══════════════════════════════════════════════
+   ── COLLAGE GRID 9 — Artworks Section ──
+   Layout: 3 portrait | 3 square | 1 wide | 2 square
+   ══════════════════════════════════════════════ */
 .collage-grid-9 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 6px;
-  max-width: 900px; /* prevents huge stretch */
-  margin: auto;
+  gap: 5px;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .collage-grid-9 .collage-item {
-  border: 3px solid #000;
+  border: 2px solid #000;
   overflow: hidden;
   background: #111;
   position: relative;
@@ -431,32 +434,32 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease;
+  transition: transform 0.35s ease;
 }
 
 .collage-grid-9 .collage-item:hover img {
   transform: scale(1.04);
 }
 
-/* ── ROW 1: 3 Portrait ── */
+/* Row 1: 3 Portrait — taller cells */
 .cg-v1, .cg-v2, .cg-v3 {
   grid-column: span 2;
-  aspect-ratio: 2/3;
+  aspect-ratio: 3/4;
 }
 
-/* ── ROW 2: 3 Square ── */
+/* Row 2: 3 Square */
 .cg-s4, .cg-s5, .cg-s6 {
   grid-column: span 2;
   aspect-ratio: 1/1;
 }
 
-/* ── ROW 3: 1 Wide ── */
+/* Row 3: 1 Wide */
 .cg-w7 {
   grid-column: span 6;
-  aspect-ratio: 2/1;
+  aspect-ratio: 21/9;
 }
 
-/* ── ROW 4: 2 Square ── */
+/* Row 4: 2 Square (half-width each) */
 .cg-s8, .cg-s9 {
   grid-column: span 3;
   aspect-ratio: 1/1;
@@ -566,8 +569,9 @@ footer {
   border-top: 4px solid #000;
 }
 
-/* ── PRINT / PDF ── */
-/* ── PRINT / PDF FIX ── */
+/* ══════════════════════════════════════════════
+   PRINT / PDF
+   ══════════════════════════════════════════════ */
 @media print {
   body {
     zoom: 0.85;
@@ -588,17 +592,17 @@ footer {
     break-inside: avoid;
   }
 
-  /* ✅ FIX COLLAGE FOR PDF */
+  /* Artworks collage — keep tight in print */
   .collage-grid-9 {
     grid-template-columns: repeat(6, 1fr);
-    gap: 6px;
+    gap: 4px;
     max-width: 100%;
+    margin: 0;
   }
 
-  /* keep exact layout */
   .cg-v1, .cg-v2, .cg-v3 {
     grid-column: span 2;
-    aspect-ratio: 2/3;
+    aspect-ratio: 3/4;
   }
 
   .cg-s4, .cg-s5, .cg-s6 {
@@ -608,7 +612,7 @@ footer {
 
   .cg-w7 {
     grid-column: span 6;
-    aspect-ratio: 2/1;
+    aspect-ratio: 21/9;
   }
 
   .cg-s8, .cg-s9 {
@@ -616,13 +620,32 @@ footer {
     aspect-ratio: 1/1;
   }
 
-  /* ❌ REMOVE any forced heights */
   .collage-grid-9,
-  .collage-item {
+  .collage-grid-9 .collage-item {
     height: auto !important;
   }
+
+  /* Original collage grid print fix */
+  .collage-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+    max-width: 100%;
+  }
+
+  .cg-v1 { grid-column: span 2; }
+  .cg-s2 { grid-column: span 2; }
+  .cg-s3 { grid-column: span 2; }
+  .cg-v5 { grid-column: span 2; }
+  .cg-v6 { grid-column: span 2; }
+  .cg-v7 { grid-column: span 2; }
+  .cg-h4 { grid-column: span 2; }
+  .cg-s8 { grid-column: span 3; }
+  .cg-s9 { grid-column: span 3; }
 }
-/* ── RESPONSIVE ── */
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════════ */
 @media (max-width: 900px) {
   .stories-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -634,6 +657,32 @@ footer {
 
   .photography-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Artworks collage — 2 columns on tablet */
+  .collage-grid-9 {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+  }
+
+  .cg-v1, .cg-v2, .cg-v3 {
+    grid-column: span 2;
+    aspect-ratio: 3/4;
+  }
+
+  .cg-s4, .cg-s5, .cg-s6 {
+    grid-column: span 2;
+    aspect-ratio: 1/1;
+  }
+
+  .cg-w7 {
+    grid-column: span 4;
+    aspect-ratio: 16/7;
+  }
+
+  .cg-s8, .cg-s9 {
+    grid-column: span 2;
+    aspect-ratio: 1/1;
   }
 
   .collage-grid {
@@ -648,22 +697,6 @@ footer {
   .collage-portrait  { grid-column: 6 / 7; grid-row: 2 / 3; }
   .collage-small     { grid-column: 1 / 3; grid-row: 3 / 4; }
   .collage-banner    { grid-column: 3 / 7; grid-row: 3 / 4; }
-
-  /* collage-grid-9 responsive */
-  .collage-grid-9 {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 1fr auto;
-  }
-
-  .cg-v1 { grid-column: 1 / 3; grid-row: 1; }
-  .cg-s2 { grid-column: 3 / 5; grid-row: 1; }
-  .cg-s3 { grid-column: 5 / 7; grid-row: 1; }
-  .cg-v5 { grid-column: 1 / 3; grid-row: 2; }
-  .cg-v6 { grid-column: 3 / 5; grid-row: 2; }
-  .cg-v7 { grid-column: 5 / 6; grid-row: 2; }
-  .cg-h4 { grid-column: 6 / 7; grid-row: 1; }
-  .cg-s8 { grid-column: 6 / 7; grid-row: 2; }
-  .cg-s9 { grid-column: 1 / 7; grid-row: 3; aspect-ratio: 3/1; }
 }
 
 @media (max-width: 768px) {
@@ -703,6 +736,24 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Artworks collage — 2 columns mobile */
+  .collage-grid-9 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+  }
+
+  .cg-v1, .cg-v2, .cg-v3,
+  .cg-s4, .cg-s5, .cg-s6,
+  .cg-s8, .cg-s9 {
+    grid-column: span 1;
+    aspect-ratio: 1/1;
+  }
+
+  .cg-w7 {
+    grid-column: span 2;
+    aspect-ratio: 16/9;
+  }
+
   .collage-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -719,20 +770,6 @@ footer {
     grid-row: auto;
     aspect-ratio: 1/1;
   }
-
-  /* collage-grid-9 mobile */
-  .collage-grid-9 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-  }
-
-  .cg-v1, .cg-s2, .cg-s3,
-  .cg-v5, .cg-v6, .cg-v7,
-  .cg-h4, .cg-s8, .cg-s9 {
-    grid-column: auto;
-    grid-row: auto;
-    aspect-ratio: 1/1;
-  }
 }
 
 @media (max-width: 480px) {
@@ -744,5 +781,23 @@ footer {
   .socialmedia-grid,
   .photography-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  /* Artworks collage — single column on small phones */
+  .collage-grid-9 {
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+  }
+
+  .cg-v1, .cg-v2, .cg-v3,
+  .cg-s4, .cg-s5, .cg-s6,
+  .cg-s8, .cg-s9 {
+    grid-column: span 1;
+    aspect-ratio: 1/1;
+  }
+
+  .cg-w7 {
+    grid-column: span 2;
+    aspect-ratio: 16/9;
   }
 }
