@@ -232,45 +232,15 @@ body {
   position: relative;
 }
 
-/* ═══════════════════════════════════════════════
-   LOGOS - PERFECTLY CENTERED + WHITE BACKGROUND
-   ═══════════════════════════════════════════════ */
+/* LOGOS */
 .portfolio-card {
   height: 200px;
   padding: 1.5rem;
-  background: #ffffff !important;
-  border: 3px solid #000;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .portfolio-card img {
   width: 65%;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
   object-fit: contain;
-  background: #ffffff;
-  display: block !important;
-  margin: 0 auto; /* Perfect horizontal centering */
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-}
-
-.portfolio-card .lazy-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background: #ffffff !important;
-}
-
-.portfolio-card .lazy-wrap::before {
-  display: none !important; /* No shimmer on logos */
 }
 
 .duration {
@@ -284,7 +254,6 @@ body {
   font-family: 'Oswald';
   font-weight: 700;
   letter-spacing: 1px;
-  z-index: 2;
 }
 
 /* POSTERS */
@@ -830,10 +799,5 @@ footer {
   .cg-w7 {
     grid-column: span 2;
     aspect-ratio: 16/9;
-  }
-}
-@media (max-width: 768px) {
-  .portfolio-card img {
-    width: 75%; /* Slightly larger on mobile */
   }
 }
