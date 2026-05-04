@@ -4,11 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Graphic Design | YOUSSEF MOHAMMED</title>
-  <!-- Preconnect to speed up Google Fonts -->
+
+  <!-- DNS prefetch for fonts -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Only load the weights actually used -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anton&family=Oswald:wght@400;700&display=swap" rel="stylesheet"></noscript>
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- Critical above-the-fold styles inlined so page renders instantly -->
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:#fff;color:#000;font-family:'Oswald',sans-serif}
+    .page-header{padding:2.5rem 5% 1.5rem;text-align:center;border-bottom:4px solid #000;background:#fff}
+    .page-header h1{font-family:'Bebas Neue',sans-serif;font-size:5.5rem;letter-spacing:8px;line-height:1}
+    .header-subtitle{font-size:1.4rem;letter-spacing:4px;margin-top:.4rem;opacity:.75}
+    .profile-summary{display:flex;align-items:flex-start;gap:2.5rem;padding:2rem 5%;border-bottom:3px solid #000;background:#f9f9f9}
+    .profile-avatar{width:110px;height:110px;border:4px solid #000;border-radius:50%;flex-shrink:0;background:#ddd;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:#000}
+    .profile-name{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;letter-spacing:4px;line-height:1;margin-bottom:.3rem}
+    .profile-role{font-family:'Oswald',sans-serif;font-size:1.05rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:.6rem;opacity:.8}
+    .profile-bio{font-family:'Oswald',sans-serif;font-size:1rem;font-weight:400;line-height:1.6;max-width:700px}
+    .profile-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}
+    .tag{background:#000;color:#fff;padding:3px 12px;font-size:.78rem;font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+  </style>
+
+  <!-- Preload the single hero image only -->
+  <link rel="preload" as="image" href="assets/soutsharq.png" fetchpriority="high">
 </head>
 <body>
 
@@ -103,8 +129,8 @@
         <p class="card-top-title">Sout Sharq</p>
         <div class="portfolio-card">
           <span class="duration">2022 – Present</span>
-          <!-- First image: load eagerly since it's above the fold -->
-          <img src="assets/soutsharq.png" alt="Sout Sharq" loading="eager" decoding="async" fetchpriority="high">
+          <!-- Hero image: eager + high priority -->
+          <img src="assets/soutsharq.png" alt="Sout Sharq" loading="eager" decoding="sync" fetchpriority="high" width="300" height="200">
         </div>
       </div>
 
@@ -112,7 +138,7 @@
         <p class="card-top-title">Mtown Studios</p>
         <div class="portfolio-card">
           <span class="duration">2022 – 2024</span>
-          <img src="assets/mtownstudios.jpg" alt="Mtown Studios" loading="lazy" decoding="async">
+          <img src="assets/mtownstudios.jpg" alt="Mtown Studios" loading="lazy" decoding="async" width="300" height="200">
         </div>
       </div>
 
@@ -120,7 +146,7 @@
         <p class="card-top-title">IM Rubiks</p>
         <div class="portfolio-card">
           <span class="duration">2024 – 2025</span>
-          <img src="assets/imrubiks.png" alt="IM Rubiks" loading="lazy" decoding="async">
+          <img src="assets/imrubiks.png" alt="IM Rubiks" loading="lazy" decoding="async" width="300" height="200">
         </div>
       </div>
 
@@ -128,7 +154,7 @@
         <p class="card-top-title">OLYVE</p>
         <div class="portfolio-card">
           <span class="duration">2025 – Present</span>
-          <img src="assets/olyve.jpg" alt="OLYVE" loading="lazy" decoding="async">
+          <img src="assets/olyve.jpg" alt="OLYVE" loading="lazy" decoding="async" width="300" height="200">
         </div>
       </div>
 
@@ -144,10 +170,10 @@
       to capture the energy of each moment and drive real-world attendance and engagement.
     </p>
     <div class="poster-grid">
-      <div class="card-wrapper"><div class="poster-card"><img src="assets/cairoke_poster.jpg" alt="Cairoke Poster" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="poster-card"><img src="assets/mtown_poster.jpg" alt="Mtown Poster" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="poster-card"><img src="assets/Husayen poster.jpg" alt="Husayen Poster" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="poster-card"><img src="assets/young amr poster.jpg" alt="Young Amr Poster" loading="lazy" decoding="async"></div></div>
+      <div class="card-wrapper"><div class="poster-card"><img src="assets/cairoke_poster.jpg" alt="Cairoke Poster" loading="lazy" decoding="async" width="500" height="500"></div></div>
+      <div class="card-wrapper"><div class="poster-card"><img src="assets/mtown_poster.jpg" alt="Mtown Poster" loading="lazy" decoding="async" width="500" height="500"></div></div>
+      <div class="card-wrapper"><div class="poster-card"><img src="assets/Husayen poster.jpg" alt="Husayen Poster" loading="lazy" decoding="async" width="500" height="500"></div></div>
+      <div class="card-wrapper"><div class="poster-card"><img src="assets/young amr poster.jpg" alt="Young Amr Poster" loading="lazy" decoding="async" width="500" height="500"></div></div>
     </div>
   </div>
 
@@ -159,10 +185,10 @@
       consistent with each artist's brand identity, crafted in Photoshop for maximum mobile-first impact.
     </p>
     <div class="stories-grid">
-      <div class="card-wrapper"><div class="story-card"><img src="assets/stories/cairoke_story.png" alt="Cairoke Story" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="story-card"><img src="assets/stories/story_poster.jpg" alt="Story Poster" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="story-card"><img src="assets/stories/husayen_story.jpg" alt="Husayen Story" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="story-card"><img src="assets/stories/young_amr_story.jpg" alt="Young Amr Story" loading="lazy" decoding="async"></div></div>
+      <div class="card-wrapper"><div class="story-card"><img src="assets/stories/cairoke_story.png" alt="Cairoke Story" loading="lazy" decoding="async" width="405" height="720"></div></div>
+      <div class="card-wrapper"><div class="story-card"><img src="assets/stories/story_poster.jpg" alt="Story Poster" loading="lazy" decoding="async" width="405" height="720"></div></div>
+      <div class="card-wrapper"><div class="story-card"><img src="assets/stories/husayen_story.jpg" alt="Husayen Story" loading="lazy" decoding="async" width="405" height="720"></div></div>
+      <div class="card-wrapper"><div class="story-card"><img src="assets/stories/young_amr_story.jpg" alt="Young Amr Story" loading="lazy" decoding="async" width="405" height="720"></div></div>
     </div>
   </div>
 
@@ -179,7 +205,7 @@
       <div class="card-wrapper">
         <p class="card-top-title">Post 01</p>
         <div class="socialmedia-card">
-          <img src="assets/social/01.png" alt="Social Media Post 1" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+          <img src="assets/social/01.png" alt="Social Media Post 1" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
           <div class="placeholder" style="display:none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             <span>1080 × 1920</span>
@@ -190,7 +216,7 @@
       <div class="card-wrapper">
         <p class="card-top-title">Post 02</p>
         <div class="socialmedia-card">
-          <img src="assets/social/02.png" alt="Social Media Post 2" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+          <img src="assets/social/02.png" alt="Social Media Post 2" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
           <div class="placeholder" style="display:none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             <span>1080 × 1920</span>
@@ -201,7 +227,7 @@
       <div class="card-wrapper">
         <p class="card-top-title">Post 03</p>
         <div class="socialmedia-card">
-          <img src="assets/social/03.jpg" alt="Social Media Post 3" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+          <img src="assets/social/03.jpg" alt="Social Media Post 3" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
           <div class="placeholder" style="display:none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             <span>1080 × 1920</span>
@@ -220,12 +246,12 @@
       and visual identity pieces produced in Adobe Photoshop and Illustrator for artists and labels.
     </p>
     <div class="artworks-grid">
-      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork1.jpg" alt="Artwork 1" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork2.jpg" alt="Artwork 2" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork3.jpg" alt="Artwork 3" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork4.jpg" alt="Artwork 4" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork7.jpeg" alt="Artwork 7" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork8.jpg" alt="Artwork 8" loading="lazy" decoding="async"></div></div>
+      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork1.jpg" alt="Artwork 1" loading="lazy" decoding="async" width="500" height="500"></div></div>
+      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork2.jpg" alt="Artwork 2" loading="lazy" decoding="async" width="500" height="500"></div></div>
+      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork3.jpg" alt="Artwork 3" loading="lazy" decoding="async" width="500" height="500"></div></div>
+      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork4.jpg" alt="Artwork 4" loading="lazy" decoding="async" width="500" height="500"></div></div>
+      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork7.jpeg" alt="Artwork 7" loading="lazy" decoding="async" width="500" height="500"></div></div>
+      <div class="card-wrapper"><div class="artwork-card"><img src="assets/artworks/artwork8.jpg" alt="Artwork 8" loading="lazy" decoding="async" width="500" height="500"></div></div>
     </div>
   </div>
 
@@ -237,16 +263,16 @@
       for seniors including identity templates, banners, and keepsake designs using Adobe Photoshop and Illustrator.
     </p>
     <div class="seniors-grid">
-      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-01.png" alt="Seniors 01" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-02.png" alt="Seniors 02" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-03.png" alt="Seniors 03" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-04.png" alt="Seniors 04" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-05.png" alt="Seniors 05" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-07.png" alt="Seniors 07" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-08.png" alt="Seniors 08" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-09.png" alt="Seniors 09" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-10.png" alt="Seniors 10" loading="lazy" decoding="async"></div></div>
-      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-11.png" alt="Seniors 11" loading="lazy" decoding="async"></div></div>
+      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-01.png" alt="Seniors 01" loading="lazy" decoding="async" width="960" height="540"></div></div>
+      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-02.png" alt="Seniors 02" loading="lazy" decoding="async" width="960" height="540"></div></div>
+      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-03.png" alt="Seniors 03" loading="lazy" decoding="async" width="960" height="540"></div></div>
+      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-04.png" alt="Seniors 04" loading="lazy" decoding="async" width="960" height="540"></div></div>
+      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-05.png" alt="Seniors 05" loading="lazy" decoding="async" width="960" height="540"></div></div>
+      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-07.png" alt="Seniors 07" loading="lazy" decoding="async" width="960" height="540"></div></div>
+      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-08.png" alt="Seniors 08" loading="lazy" decoding="async" width="960" height="540"></div></div>
+      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-09.png" alt="Seniors 09" loading="lazy" decoding="async" width="960" height="540"></div></div>
+      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-10.png" alt="Seniors 10" loading="lazy" decoding="async" width="960" height="540"></div></div>
+      <div class="card-wrapper"><div class="seniors-card"><img src="assets/seniors/OlYVE X DESIGNS 2025-11.png" alt="Seniors 11" loading="lazy" decoding="async" width="960" height="540"></div></div>
     </div>
   </div>
 
@@ -262,7 +288,7 @@
       <div class="card-wrapper">
         <p class="card-top-title">Exhibition 01</p>
         <div class="exhibition-card">
-          <img src="assets/exhibition/exhibition1.jpg" alt="Exhibition 1" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+          <img src="assets/exhibition/exhibition1.jpg" alt="Exhibition 1" loading="lazy" decoding="async" width="800" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
           <div class="placeholder" style="display:none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
             <span>Add Photo</span>
@@ -274,7 +300,7 @@
       <div class="card-wrapper">
         <p class="card-top-title">Exhibition 02</p>
         <div class="exhibition-card">
-          <img src="assets/exhibition/exhibition2.jpg" alt="Exhibition 2" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+          <img src="assets/exhibition/exhibition2.jpg" alt="Exhibition 2" loading="lazy" decoding="async" width="800" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
           <div class="placeholder" style="display:none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
             <span>Add Photo</span>
@@ -299,7 +325,7 @@
       <div class="card-wrapper">
         <p class="card-top-title">CGI For ElMalahy</p>
         <div class="project3d-card">
-          <img src="assets/3D/Render1.png" alt="3D Project 1" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+          <img src="assets/3D/Render1.png" alt="3D Project 1" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
           <div class="placeholder" style="display:none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
             <span>Add Render</span>
@@ -311,7 +337,7 @@
       <div class="card-wrapper">
         <p class="card-top-title">CGI 02</p>
         <div class="project3d-card">
-          <img src="assets/3D/Render2.png" alt="3D Project 2" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+          <img src="assets/3D/Render2.png" alt="3D Project 2" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
           <div class="placeholder" style="display:none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
             <span>Add Render</span>
@@ -323,7 +349,7 @@
       <div class="card-wrapper">
         <p class="card-top-title">CGI 03</p>
         <div class="project3d-card">
-          <img src="assets/3D/Render3.png" alt="3D Project 3" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+          <img src="assets/3D/Render3.png" alt="3D Project 3" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
           <div class="placeholder" style="display:none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
             <span>Add Render</span>
@@ -335,7 +361,7 @@
       <div class="card-wrapper">
         <p class="card-top-title">Logo 3D for SOUTSHARQ</p>
         <div class="project3d-card">
-          <img src="assets/3D/Render4.png" alt="3D Project 4" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+          <img src="assets/3D/Render4.png" alt="3D Project 4" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
           <div class="placeholder" style="display:none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
             <span>Add Render</span>
@@ -360,7 +386,7 @@
       <div class="card-wrapper">
         <p class="card-top-title">Visual Backscreen 01</p>
         <div class="backscreen-card">
-          <img src="assets/3D/visual.png" alt="Backscreen 1" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+          <img src="assets/3D/visual.png" alt="Backscreen 1" loading="lazy" decoding="async" width="1920" height="1080" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
           <div class="placeholder" style="display:none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
             <span>1920 x 1080 — Add Visual</span>
@@ -381,65 +407,17 @@
     </p>
     <div class="photography-grid">
 
-      <div class="card-wrapper">
-        <div class="photo-card">
-          <img src="assets/Photography/01.jpeg" alt="Photo 1" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-          <div class="placeholder" style="display:none">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            <span>Add Photo</span>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrapper"><div class="photo-card"><img src="assets/Photography/01.jpeg" alt="Photo 1" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'"><div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>Add Photo</span></div></div></div>
 
-      <div class="card-wrapper">
-        <div class="photo-card">
-          <img src="assets/Photography/02.jpeg" alt="Photo 2" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-          <div class="placeholder" style="display:none">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            <span>Add Photo</span>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrapper"><div class="photo-card"><img src="assets/Photography/02.jpeg" alt="Photo 2" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'"><div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>Add Photo</span></div></div></div>
 
-      <div class="card-wrapper">
-        <div class="photo-card">
-          <img src="assets/Photography/03.jpeg" alt="Photo 3" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-          <div class="placeholder" style="display:none">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            <span>Add Photo</span>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrapper"><div class="photo-card"><img src="assets/Photography/03.jpeg" alt="Photo 3" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'"><div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>Add Photo</span></div></div></div>
 
-      <div class="card-wrapper">
-        <div class="photo-card">
-          <img src="assets/Photography/04.jpeg" alt="Photo 4" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-          <div class="placeholder" style="display:none">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            <span>Add Photo</span>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrapper"><div class="photo-card"><img src="assets/Photography/04.jpeg" alt="Photo 4" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'"><div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>Add Photo</span></div></div></div>
 
-      <div class="card-wrapper">
-        <div class="photo-card">
-          <img src="assets/Photography/05.jpeg" alt="Photo 5" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-          <div class="placeholder" style="display:none">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            <span>Add Photo</span>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrapper"><div class="photo-card"><img src="assets/Photography/05.jpeg" alt="Photo 5" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'"><div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>Add Photo</span></div></div></div>
 
-      <div class="card-wrapper">
-        <div class="photo-card">
-          <img src="assets/Photography/06.jpeg" alt="Photo 6" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-          <div class="placeholder" style="display:none">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            <span>Add Photo</span>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrapper"><div class="photo-card"><img src="assets/Photography/06.jpeg" alt="Photo 6" loading="lazy" decoding="async" width="405" height="720" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'"><div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg><span>Add Photo</span></div></div></div>
 
     </div>
   </div>
@@ -452,80 +430,49 @@
     </p>
     <div class="collage-grid-9">
 
-      <!-- Row 1: 3 Portrait -->
       <div class="collage-item cg-v1">
-        <img src="assets/myartworks/01.jpg" alt="Artwork Collage 1" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-        <div class="placeholder" style="display:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Portrait</span>
-        </div>
+        <img src="assets/myartworks/01.jpg" alt="Artwork Collage 1" loading="lazy" decoding="async" width="600" height="800" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+        <div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Portrait</span></div>
       </div>
 
       <div class="collage-item cg-v2">
-        <img src="assets/myartworks/06.png" alt="Artwork Collage 2" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-        <div class="placeholder" style="display:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Portrait</span>
-        </div>
+        <img src="assets/myartworks/06.png" alt="Artwork Collage 2" loading="lazy" decoding="async" width="600" height="800" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+        <div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Portrait</span></div>
       </div>
 
       <div class="collage-item cg-v3">
-        <img src="assets/myartworks/05.png" alt="Artwork Collage 3" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-        <div class="placeholder" style="display:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Portrait</span>
-        </div>
+        <img src="assets/myartworks/05.png" alt="Artwork Collage 3" loading="lazy" decoding="async" width="600" height="800" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+        <div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Portrait</span></div>
       </div>
 
-      <!-- Row 2: 3 Square -->
       <div class="collage-item cg-s4">
-        <img src="assets/myartworks/02.jpg" alt="Artwork Collage 4" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-        <div class="placeholder" style="display:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Square</span>
-        </div>
+        <img src="assets/myartworks/02.jpg" alt="Artwork Collage 4" loading="lazy" decoding="async" width="600" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+        <div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Square</span></div>
       </div>
 
       <div class="collage-item cg-s5">
-        <img src="assets/myartworks/03.png" alt="Artwork Collage 5" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-        <div class="placeholder" style="display:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Square</span>
-        </div>
+        <img src="assets/myartworks/03.png" alt="Artwork Collage 5" loading="lazy" decoding="async" width="600" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+        <div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Square</span></div>
       </div>
 
       <div class="collage-item cg-s6">
-        <img src="assets/myartworks/09.jpg" alt="Artwork Collage 6" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-        <div class="placeholder" style="display:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Square</span>
-        </div>
+        <img src="assets/myartworks/09.jpg" alt="Artwork Collage 6" loading="lazy" decoding="async" width="600" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+        <div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Square</span></div>
       </div>
 
-      <!-- Row 3: 1 Wide -->
       <div class="collage-item cg-w7">
-        <img src="assets/myartworks/04.png" alt="Artwork Collage 7" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-        <div class="placeholder" style="display:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Wide</span>
-        </div>
+        <img src="assets/myartworks/04.png" alt="Artwork Collage 7" loading="lazy" decoding="async" width="1200" height="514" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+        <div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Wide</span></div>
       </div>
 
-      <!-- Row 4: 2 Square -->
       <div class="collage-item cg-s8">
-        <img src="assets/myartworks/07.png" alt="Artwork Collage 8" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-        <div class="placeholder" style="display:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Square</span>
-        </div>
+        <img src="assets/myartworks/07.png" alt="Artwork Collage 8" loading="lazy" decoding="async" width="600" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+        <div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Square</span></div>
       </div>
 
       <div class="collage-item cg-s9">
-        <img src="assets/myartworks/08.png" alt="Artwork Collage 9" loading="lazy" decoding="async" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
-        <div class="placeholder" style="display:none">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-          <span>Square</span>
-        </div>
+        <img src="assets/myartworks/08.png" alt="Artwork Collage 9" loading="lazy" decoding="async" width="600" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex'">
+        <div class="placeholder" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Square</span></div>
       </div>
 
     </div>
@@ -542,7 +489,7 @@
     <div class="collab-grid" style="margin-top: 2rem;">
       <div class="card-wrapper">
         <div class="collab-card">
-          <img src="assets/snitch.png" alt="Snitch Collaboration" loading="lazy" decoding="async">
+          <img src="assets/snitch.png" alt="Snitch Collaboration" loading="lazy" decoding="async" width="960" height="540">
         </div>
       </div>
     </div>
@@ -554,30 +501,30 @@
   &copy; 2025 Youssef Mohammed &mdash; Graphic Designer &amp; Software Engineering Student
 </footer>
 
+<!-- Optimized image handling: CSS-only fade, no render-blocking JS -->
+<style>
+  img { opacity: 0; transition: opacity 0.3s ease; }
+  img.img-loaded { opacity: 1; }
+
+  /* content-visibility tells browser to skip rendering off-screen sections entirely */
+  .section { content-visibility: auto; contain-intrinsic-size: 0 600px; }
+</style>
+
+<!-- Tiny non-blocking script at end of body -->
 <script>
-  // Error handling for missing images
+  // Use capture-phase load event — fires per-image as each one finishes
+  document.addEventListener('load', function(e) {
+    if (e.target.tagName === 'IMG') e.target.classList.add('img-loaded');
+  }, true);
+
+  // Handle already-cached images that fire before script runs
   document.querySelectorAll('img').forEach(function(img) {
-    function handleError() {
+    if (img.complete && img.naturalWidth > 0) img.classList.add('img-loaded');
+    img.addEventListener('error', function() {
       this.style.display = 'none';
       var ph = this.parentElement.querySelector('.placeholder');
       if (ph) ph.style.display = 'flex';
-    }
-    img.addEventListener('error', handleError);
-    // Catch already-broken cached images
-    if (img.complete && img.naturalWidth === 0) handleError.call(img);
-  });
-
-  // Smooth fade-in as images load
-  const s = document.createElement('style');
-  s.textContent = 'img { opacity: 0; transition: opacity 0.35s ease; } img.img-loaded { opacity: 1; }';
-  document.head.appendChild(s);
-
-  document.querySelectorAll('img').forEach(function(img) {
-    if (img.complete && img.naturalWidth > 0) {
-      img.classList.add('img-loaded');
-    } else {
-      img.addEventListener('load', function() { this.classList.add('img-loaded'); });
-    }
+    });
   });
 </script>
 
