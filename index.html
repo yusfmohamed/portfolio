@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Youssef Mohammed — Graphic Designer</title>
   <meta name="description" content="Portfolio of Youssef Mohammed, a graphic designer and software engineering student: posters, social content, 3D visuals, photography and brand work for artists and labels.">
-  <meta name="theme-color" content="#f6f5f1">
+  <meta name="theme-color" content="#f6f5fb">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235b3df5'/%3E%3Ctext x='32' y='43' font-family='Arial Black,Arial,sans-serif' font-size='28' font-weight='900' text-anchor='middle' fill='white'%3EYM%3C/text%3E%3C/svg%3E">
   <link rel="canonical" href="https://yusfmohamed.github.io/portfolio/">
 
@@ -19,7 +19,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>try{var t=localStorage.getItem('ym-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="theme.css">
   <script>document.documentElement.className = 'js';</script>
 </head>
 <body>
@@ -57,11 +59,6 @@
         <li>Photoshop</li><li>Illustrator</li><li>Premiere Pro</li><li>After Effects</li><li>Blender</li><li>Resolume Arena</li><li>Photography</li>
       </ul>
     </div>
-    <div class="hero-art" aria-hidden="false">
-      <figure class="hero-card c1 media"><img src="img/posters/cairoke-thumb.webp" width="720" height="720" alt="Cairoke poster" fetchpriority="high" decoding="async"></figure>
-      <figure class="hero-card c2 media"><img src="img/stories/young-amr-thumb.webp" width="405" height="720" alt="Young Amr story" fetchpriority="high" decoding="async"></figure>
-      <figure class="hero-card c3 media"><img src="img/3d/render-03-thumb.webp" width="405" height="720" alt="3D render" fetchpriority="high" decoding="async"></figure>
-    </div>
   </div>
   <div class="wrap section">
     <div class="section-head"><h2>Featured collections</h2><a class="more" href="#/work">See all 12 →</a></div>
@@ -89,6 +86,13 @@
     </header>
     <p class="about-text">21-year-old Graphic Designer &amp; Software Engineering student at the Egyptian Chinese University. 6+ years of hands-on experience in Adobe Photoshop, Illustrator, and a wide range of creative tools. Passionate about visual identity, music branding, poster art, 3D design, and photography.</p>
     <ul class="tools big"><li>Adobe Photoshop</li><li>Adobe Illustrator</li><li>Adobe Premiere Pro</li><li>Adobe After Effects</li><li>Blender 3D Design</li><li>Photography</li><li>6 Years Exp.</li></ul>
+    <h2 class="stack-title">Tech stack</h2>
+    <div class="stack">
+      <div class="stack-group"><h3>Languages</h3><ul><li>C++</li><li>Python</li><li>JavaScript</li></ul></div>
+      <div class="stack-group"><h3>Web</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+      <div class="stack-group"><h3>Mobile</h3><ul><li>Flutter</li><li>Expo</li><li>React Native</li></ul></div>
+      <div class="stack-group"><h3>AI &amp; Vision</h3><ul><li>Computer Vision with Python</li><li>AI tools</li></ul></div>
+    </div>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#/work">See the work</a>
       <a class="btn btn-ghost" href="#/contact">Contact me</a>
@@ -377,5 +381,6 @@
 </div>
 
 <script src="app.js" defer></script>
+<script src="theme.js" defer></script>
 </body>
 </html>
