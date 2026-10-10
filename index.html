@@ -1,473 +1,1749 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Youssef Mohamed — Graphic Designer &amp; Software Engineer</title>
-  <meta name="description" content="Portfolio of Youssef Mohamed, a graphic designer and software engineer: posters, social content, 3D visuals, photography and brand work for artists and labels.">
-  <meta name="theme-color" content="#f6f5fb">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235b3df5'/%3E%3Ctext x='32' y='43' font-family='Arial Black,Arial,sans-serif' font-size='28' font-weight='900' text-anchor='middle' fill='white'%3EYM%3C/text%3E%3C/svg%3E">
-  <link rel="canonical" href="https://yusfmohamed.github.io/portfolio/">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Youssef Mohamed — Graphic Designer &amp; Software Engineer">
-  <meta property="og:description" content="Graphic design, software engineering, posters, social content, 3D visuals and photography.">
-  <meta property="og:url" content="https://yusfmohamed.github.io/portfolio/">
-  <meta property="og:image" content="https://yusfmohamed.github.io/portfolio/img/og.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-  <script>try{var t=localStorage.getItem('ym-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="theme.css">
-  <!-- HERO LAYOUT: Adjust these rules here if you want to change the centered name/title layout. -->
-  <style>
-    #view-home .hero { justify-content: center; text-align: center; }
-    #view-home .hero-copy { width: 100%; max-width: 1000px; margin-inline: auto; text-align: center; }
-    #view-home #h-home { white-space: nowrap; text-align: center; line-height: .98; font-size: clamp(2.8rem, 8vw, 7rem); }
-    #view-home .hero-copy > .eyebrow { margin-inline: auto; }
-    #view-home .hero-text { margin-inline: auto; }
-    #view-home .hero-cta { justify-content: center; }
-    #view-home .tools { justify-content: center; }
-    @media (max-width: 520px) { #view-home #h-home { font-size: clamp(2.6rem, 11vw, 4rem); white-space: normal; } }
-  </style>
-  <script>document.documentElement.className = 'js';</script>
-</head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-
-<header class="site-header" id="site-header">
-  <div class="wrap bar">
-    <a class="brand" href="#/" aria-label="Youssef Mohamed — home"><span class="brand-mark">YM</span><span class="brand-name">Youssef Mohamed</span></a>
-    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span><span></span></button>
-    <nav class="menu" id="menu" aria-label="Main">
-      <a href="#/" data-nav="home">Home</a>
-      <div class="has-dd">
-        <a href="#/work" data-nav="work" aria-haspopup="true">Work <svg class="chev" viewBox="0 0 12 8" width="10" height="7" aria-hidden="true"><path d="M1 1.5 6 6.5 11 1.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <div class="dd" role="menu"><div class="dd-group"><span class="dd-label">Client Work</span><a href="#/brands" role="menuitem">Work Experience</a><a href="#/posters" role="menuitem">Official Posters</a><a href="#/stories" role="menuitem">Official Stories</a><a href="#/social" role="menuitem">Social Media Posts</a><a href="#/artworks" role="menuitem">Official Artworks</a><a href="#/seniors" role="menuitem">Seniors Kits</a><a href="#/collab" role="menuitem">Collaborations</a></div><div class="dd-group"><span class="dd-label">3D &amp; Motion</span><a href="#/3d" role="menuitem">3D Projects</a><a href="#/backscreen" role="menuitem">Visuals Backscreen</a></div><div class="dd-group"><span class="dd-label">Personal</span><a href="#/exhibitions" role="menuitem">Exhibitions</a><a href="#/photography" role="menuitem">Photography &amp; Editing</a><a href="#/my-artworks" role="menuitem">My Artworks</a></div></div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Youssef Mohamed — Graphic Designer &amp; Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Youssef Mohamed, a graphic designer and software engineer: posters, social content, 3D visuals, photography and brand work for artists and labels.">
+    <meta name="theme-color" content="#ececec">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://youssefmohamedportfolio.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Youssef Mohamed — Graphic Designer &amp; Software Engineer">
+    <meta
+      property="og:description"
+      content="Graphic design, software engineering, posters, social content, 3D visuals and photography.">
+    <meta property="og:url" content="https://youssefmohamedportfolio.vercel.app/">
+    <meta
+      property="og:image"
+      content="https://youssefmohamedportfolio.vercel.app/img/3d/render-03-thumb.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet">
+    <script>
+      try {
+        var t = localStorage.getItem('ym-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      document.documentElement.className = 'js';
+    </script>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M20.447 20.452H16.89v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136
+            1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85
+            3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a1.98 1.98 0
+            01-1.977-1.98c0-1.093.885-1.98 1.977-1.98s1.977.887 1.977 1.98a1.98 1.98 0
+            01-1.977 1.98zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0
+            1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24
+            22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </symbol>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205
+            11.385.6.113.82-.258.82-.577
+            0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7
+            3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07
+            1.835 2.809 1.305
+            3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93
+            0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3
+            1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23
+            3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805
+            5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0
+            .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+      </symbol>
+      <symbol id="i-behance" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M7.799 5.698c.589 0 1.12.051 1.606.156.482.107.894.28
+            1.241.525.344.243.612.564.804.966.19.4.284.873.284 1.418 0 .608-.139 1.12-.418
+            1.534-.28.412-.683.754-1.209 1.028.73.21 1.275.585 1.633 1.127.361.54.54
+            1.191.54 1.955 0 .596-.12 1.113-.355 1.55-.237.436-.558.795-.963 1.078a4.24 4.24
+            0 01-1.39.62 6.3 6.3 0 01-1.618.206H2V5.698h5.799zm-.29 4.998c.46 0 .836-.109
+            1.128-.33.29-.22.437-.567.437-1.04 0-.27-.05-.492-.147-.67a1.12 1.12 0
+            00-.394-.42 1.69 1.69 0 00-.58-.224 3.298 3.298 0
+            00-.7-.07H4.341v2.754h3.168zm.157 5.237c.267 0
+            .52-.027.758-.08.24-.054.45-.143.626-.267.178-.125.32-.292.424-.5.104-.211.156-.475.156-.795
+            0-.632-.18-1.085-.535-1.357-.358-.271-.83-.407-1.415-.407H4.341v3.406h3.325zm9.768.378c.36.351.878.526
+            1.555.526.484 0 .902-.12 1.255-.365.35-.244.566-.504.646-.782h2.15c-.343
+            1.077-.87 1.845-1.575 2.303-.706.457-1.561.686-2.56.686-.695
+            0-1.32-.111-1.877-.336a4.084 4.084 0 01-1.424-.962 4.38 4.38 0
+            01-.907-1.488c-.214-.578-.32-1.212-.32-1.9 0-.666.109-1.288.326-1.868a4.44 4.44
+            0 01.924-1.488 4.208 4.208 0 011.428-.982c.555-.236 1.167-.354 1.837-.354.748 0
+            1.407.145 1.974.436.566.29 1.034.681 1.402 1.174.368.493.633 1.057.793
+            1.693.162.635.214 1.3.159 1.993h-6.402c.031.763.25 1.302.616
+            1.714zm2.706-4.737c-.29-.32-.744-.48-1.36-.48-.393 0-.72.066-.982.2a2.03 2.03 0
+            00-.636.507 1.89 1.89 0 00-.34.657 2.926 2.926 0
+            00-.107.679h4.046c-.086-.7-.332-1.243-.621-1.563zM15.5 7h4.5v1.2H15.5V7z"/>
+      </symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </g>
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07
+            11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7
+            2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0
+            012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+      </symbol>
+      <symbol id="i-email" viewBox="0 0 24 24">
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </g>
+      </symbol>
+    </svg>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="hdr">
+      <div class="wrap">
+        <div class="hdr-in">
+          <a href="#/" data-nav="home" aria-label="Youssef Mohamed — home">© Youssef Mohamed</a>
+          <a class="nav-d" href="#/work" data-nav="work">Projects</a>
+          <a class="nav-d" href="#/about" data-nav="about">About</a>
+          <div class="hdr-right">
+            <a class="nav-d" href="#/contact" data-nav="contact">Contact</a>
+            <button class="theme-btn" id="theme" type="button" aria-label="Switch theme"></button>
+            <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+              Menu
+            </button>
+          </div>
+        </div>
       </div>
-      <a href="#/about" data-nav="about">About</a>
-      <a href="#/contact" data-nav="contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main id="main">
-
-<section class="view" id="view-home" data-title="Youssef Mohamed — Graphic Designer &amp; Software Engineer" aria-label="Home">
-  <div class="wrap hero">
-    <div class="hero-copy">
-      <h1 id="h-home" tabindex="-1">Youssef Mohamed</h1>
-      <p class="eyebrow hero-role">Graphic Designer &amp; Software Engineer</p>
-      <p class="hero-text">Visual identity, music branding, poster art, 3D design and photography — six years of turning sound and culture into pictures people remember.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#/work">View my work</a>
-        <a class="btn btn-ghost" href="#/contact">Get in touch</a>
+    </header>
+    <div class="menu" id="menu" hidden>
+      <div class="menu-top">
+        <span>© Youssef Mohamed</span>
+        <button type="button" id="menu-close">Close</button>
       </div>
-      <ul class="tools" aria-label="Tools">
-        <li>Photoshop</li><li>Illustrator</li><li>Figma</li><li>Premiere Pro</li><li>After Effects</li><li>Blender</li><li>Resolume Arena</li><li>Photography</li>
-      </ul>
+      <nav class="menu-main" aria-label="Main">
+        <a href="#/" data-nav="home">Home</a>
+        <a href="#/work" data-nav="work">Projects</a>
+        <a href="#/about" data-nav="about">About</a>
+        <a href="#/contact" data-nav="contact">Contact</a>
+      </nav>
+      <nav class="menu-sub" aria-label="Collections">
+        <span class="lbl">Projects</span>
+        <a href="#/brands">Work Experience</a>
+        <a href="#/posters">Official Posters</a>
+        <a href="#/stories">Official Stories</a>
+        <a href="#/social">Social Media Posts</a>
+        <a href="#/artworks">Official Artworks</a>
+        <a href="#/seniors">Seniors Kits</a>
+        <a href="#/collab">Collaborations</a>
+        <a href="#/3d">3D Projects</a>
+        <a href="#/backscreen">Visuals Backscreen</a>
+        <a href="#/exhibitions">Exhibitions</a>
+        <a href="#/photography">Photography &amp; Editing</a>
+        <a href="#/my-artworks">My Artworks</a>
+      </nav>
     </div>
-  </div>
-  <div class="wrap section">
-    <div class="section-head"><h2>Featured collections</h2><a class="more" href="#/work">See all 12 →</a></div>
-    <div class="tiles"><a class="tile" href="#/posters"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/posters/cairoke-thumb.webp" width="720" height="720" alt="Official Posters cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Official Posters</span><span class="tile-meta">4 posters</span></span><span class="tile-arrow" aria-hidden="true">→</span></a><a class="tile" href="#/stories"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/stories/husayen_story.jpg" width="405" height="720" alt="Official Stories cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Official Stories</span><span class="tile-meta">4 stories</span></span><span class="tile-arrow" aria-hidden="true">→</span></a><a class="tile" href="#/3d"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/3d/render-01-thumb.webp" width="405" height="720" alt="3D Projects cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">3D Projects</span><span class="tile-meta">4 projects</span></span><span class="tile-arrow" aria-hidden="true">→</span></a><a class="tile" href="#/seniors"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/polo.png" width="720" height="405" alt="Seniors Kits cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Seniors Kits</span><span class="tile-meta">10 designs</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div>
-  </div>
-</section>
-<section class="view" id="view-work" data-title="Work" aria-labelledby="h-work">
-  <div class="wrap">
-    <header class="view-head center">
-      <h1 id="h-work" tabindex="-1">Work</h1>
-      <p class="lede">Pick a collection to explore it.</p>
-      <div class="chips" role="group" aria-label="Filter work"><button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All</button><button type="button" class="chip" data-filter="client" aria-pressed="false">Client Work</button><button type="button" class="chip" data-filter="motion" aria-pressed="false">3D &amp; Motion</button><button type="button" class="chip" data-filter="personal" aria-pressed="false">Personal</button></div>
-    </header>
-    <div class="tiles tiles-all" id="all-tiles">
-      <div class="tile-wrap" data-tab="client"><a class="tile" href="#/brands"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/brands/im-rubiks-thumb.webp" width="720" height="720" alt="Work Experience cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Work Experience</span><span class="tile-meta">4 experiences</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div><div class="tile-wrap" data-tab="client"><a class="tile" href="#/posters"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="assets/cairoke_poster.jpg" width="720" height="720" alt="Official Posters cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Official Posters</span><span class="tile-meta">4 posters</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div><div class="tile-wrap" data-tab="client"><a class="tile" href="#/stories"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/stories/husayen_story.jpg" width="405" height="720" alt="Official Stories cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Official Stories</span><span class="tile-meta">4 stories</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div><div class="tile-wrap" data-tab="client"><a class="tile" href="#/social"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/social/01.png" width="405" height="720" alt="Social Media Posts cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Social Media Posts</span><span class="tile-meta">3 posts</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div><div class="tile-wrap" data-tab="client"><a class="tile" href="#/artworks"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="assets/artworks/artwork3.jpg" width="720" height="720" alt="Official Artworks cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Official Artworks</span><span class="tile-meta">6 artworks</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div><div class="tile-wrap" data-tab="client"><a class="tile" href="#/seniors"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/polo.png" width="720" height="405" alt="Seniors Kits cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Seniors Kits</span><span class="tile-meta">10 designs</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div><div class="tile-wrap" data-tab="client"><a class="tile" href="#/collab"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/collab/snitch-thumb.webp" width="720" height="405" alt="Collaborations cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Collaborations</span><span class="tile-meta">1 collaboration</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div><div class="tile-wrap" data-tab="motion"><a class="tile" href="#/3d"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/3d/Render1.png" width="405" height="720" alt="3D Projects cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">3D Projects</span><span class="tile-meta">4 projects</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div><div class="tile-wrap" data-tab="motion"><a class="tile" href="#/backscreen"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/backscreen/visual-01-thumb.webp" width="720" height="405" alt="Visuals Backscreen cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Visuals Backscreen</span><span class="tile-meta">1 visual</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div><div class="tile-wrap" data-tab="personal"><a class="tile" href="#/exhibitions"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/exhibitions/exhibition-01-thumb.webp" width="629" height="720" alt="Exhibitions cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Exhibitions</span><span class="tile-meta">2 exhibitions</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div><div class="tile-wrap" data-tab="personal"><a class="tile" href="#/photography"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/photography/01.jpeg" width="480" height="720" alt="Photography &amp; Editing cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">Photography &amp; Editing</span><span class="tile-meta">6 photos</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div><div class="tile-wrap" data-tab="personal"><a class="tile" href="#/my-artworks"><span class="tile-media media"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="assets/myartworks/07.png" width="576" height="720" alt="My Artworks cover" loading="lazy" decoding="async"></span><span class="tile-body"><span class="tile-title">My Artworks</span><span class="tile-meta">9 artworks</span></span><span class="tile-arrow" aria-hidden="true">→</span></a></div>
+    <main id="main">
+      <section
+        class="view"
+        id="view-home"
+        data-title="Youssef Mohamed — Graphic Designer &amp; Software Engineer"
+        aria-label="Home">
+        <div class="wrap hero">
+          <div class="hero-center">
+            <div class="hero-panel">
+              <img src="img/bw.png" alt="" fetchpriority="high" decoding="async">
+            </div>
+            <h1 id="h-home" tabindex="-1"><span>Youssef</span><span>Mohamed</span></h1>
+          </div>
+          <div class="hero-foot">
+            <p class="role">
+              <i aria-hidden="true">//</i>
+              <span class="sr">Graphic Designer, Software Engineer</span>
+              <span class="tw" aria-hidden="true" data-text="Graphic Designer">Graphic Designer</span>
+              <span class="tw" aria-hidden="true" data-text="Software Engineer">Software Engineer</span>
+            </p>
+          </div>
+          <div class="intro">
+            <span></span>
+            <div>
+              <p>
+                Graphic Design Projects, music branding, poster art, 3D design and photography — six years of turning sound
+                and culture into pictures people remember.
+              </p>
+              <ul class="tools" aria-label="Tools">
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Figma</li>
+                <li>Premiere Pro</li>
+                <li>After Effects</li>
+                <li>Blender</li>
+                <li>Resolume Arena</li>
+                <li>Photography</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sec-head">
+            <h2>Selected work</h2>
+            <a class="more" href="#/work">See all 12 →</a>
+          </div>
+          <div class="tiles four">
+            <a class="tile" href="#/posters">
+              <div class="fig">
+                <img
+                  src="assets/cairoke_poster.jpg"
+                  alt="Official Posters cover"
+                  loading="lazy"
+                  decoding="async">
+              </div>
+              <div class="tile-t"><span>Official Posters</span><small>4 posters</small></div>
+            </a>
+            <a class="tile" href="#/stories">
+              <div class="fig">
+                <img
+                  src="img/stories/husayen_story.jpg"
+                  alt="Official Stories cover"
+                  loading="lazy"
+                  decoding="async">
+              </div>
+              <div class="tile-t"><span>Official Stories</span><small>4 stories</small></div>
+            </a>
+            <a class="tile" href="#/3d">
+              <div class="fig">
+                <img
+                  src="assets/3d/Render1.png"
+                  alt="3D Projects cover"
+                  loading="lazy"
+                  decoding="async">
+              </div>
+              <div class="tile-t"><span>3D Projects</span><small>4 projects</small></div>
+            </a>
+            <a class="tile" href="#/seniors">
+              <div class="fig contain">
+                <img src="img/seniors/polo.png" alt="Seniors Kits cover" loading="lazy" decoding="async">
+              </div>
+              <div class="tile-t"><span>Seniors Kits</span><small>13 designs</small></div>
+            </a>
+          </div>
+          <div class="connect reveal">
+            <h2>Find me online</h2>
+            <div class="connect-grid">
+              <a href="https://linkedin.com/in/yusfmohamed" target="_blank" rel="noopener">
+                <svg class="ic" aria-hidden="true">
+                  <use href="#i-linkedin"/>
+                </svg>
+                <span>LinkedIn</span>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a href="https://instagram.com/yusf4u" target="_blank" rel="noopener">
+                <svg class="ic" aria-hidden="true">
+                  <use href="#i-instagram"/>
+                </svg>
+                <span>Instagram</span>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a href="https://behance.net/yusf4u" target="_blank" rel="noopener">
+                <svg class="ic" aria-hidden="true">
+                  <use href="#i-behance"/>
+                </svg>
+                <span>Behance</span>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a href="https://github.com/yusfmohamed" target="_blank" rel="noopener">
+                <svg class="ic" aria-hidden="true">
+                  <use href="#i-github"/>
+                </svg>
+                <span>GitHub</span>
+                <b aria-hidden="true">↗</b>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="view" id="view-work" data-title="Projects" aria-labelledby="h-work">
+        <div class="wrap">
+          <header class="view-head">
+            <h1 id="h-work" tabindex="-1">Projects</h1>
+            <p class="lede">Pick a collection to explore it.</p>
+            <div class="chips" role="group" aria-label="Filter projects">
+              <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+              <button type="button" class="chip" data-filter="client" aria-pressed="false">
+                Client Work
+              </button>
+              <button type="button" class="chip" data-filter="motion" aria-pressed="false">
+                3D &amp; Motion
+              </button>
+              <button type="button" class="chip" data-filter="personal" aria-pressed="false">Personal</button>
+            </div>
+          </header>
+          <div class="tiles">
+            <div class="tile-wrap" data-tab="client">
+              <a class="tile" href="#/brands">
+                <div class="fig contain">
+                  <img
+                    src="img/brands/im-rubiks-thumb.webp"
+                    alt="Work Experience cover"
+                    loading="lazy"
+                    decoding="async">
+                </div>
+                <div class="tile-t"><span>Work Experience</span><small>6 experiences</small></div>
+              </a>
+            </div>
+            <div class="tile-wrap" data-tab="client">
+              <a class="tile" href="#/posters">
+                <div class="fig">
+                  <img
+                    src="assets/cairoke_poster.jpg"
+                    alt="Official Posters cover"
+                    loading="lazy"
+                    decoding="async">
+                </div>
+                <div class="tile-t"><span>Official Posters</span><small>4 posters</small></div>
+              </a>
+            </div>
+            <div class="tile-wrap" data-tab="client">
+              <a class="tile" href="#/stories">
+                <div class="fig">
+                  <img
+                    src="img/stories/husayen_story.jpg"
+                    alt="Official Stories cover"
+                    loading="lazy"
+                    decoding="async">
+                </div>
+                <div class="tile-t"><span>Official Stories</span><small>4 stories</small></div>
+              </a>
+            </div>
+            <div class="tile-wrap" data-tab="client">
+              <a class="tile" href="#/social">
+                <div class="fig">
+                  <img src="img/social/01.png" alt="Social Media Posts cover" loading="lazy" decoding="async">
+                </div>
+                <div class="tile-t"><span>Social Media Posts</span><small>3 posts</small></div>
+              </a>
+            </div>
+            <div class="tile-wrap" data-tab="client">
+              <a class="tile" href="#/artworks">
+                <div class="fig">
+                  <img
+                    src="assets/artworks/artwork3.jpg"
+                    alt="Official Artworks cover"
+                    loading="lazy"
+                    decoding="async">
+                </div>
+                <div class="tile-t"><span>Official Artworks</span><small>6 artworks</small></div>
+              </a>
+            </div>
+            <div class="tile-wrap" data-tab="client">
+              <a class="tile" href="#/seniors">
+                <div class="fig contain">
+                  <img
+                    src="img/seniors/front-SIS.png"
+                    alt="Seniors Kits cover"
+                    loading="lazy"
+                    decoding="async">
+                </div>
+                <div class="tile-t"><span>Seniors Kits</span><small>13 designs</small></div>
+              </a>
+            </div>
+            <div class="tile-wrap" data-tab="client">
+              <a class="tile" href="#/collab">
+                <div class="fig">
+                  <img
+                    src="img/collab/snitch-thumb.webp"
+                    alt="Collaborations cover"
+                    loading="lazy"
+                    decoding="async">
+                </div>
+                <div class="tile-t"><span>Collaborations</span><small>1 collaboration</small></div>
+              </a>
+            </div>
+            <div class="tile-wrap" data-tab="motion">
+              <a class="tile" href="#/3d">
+                <div class="fig">
+                  <img src="img/3d/Render1.png" alt="3D Projects cover" loading="lazy" decoding="async">
+                </div>
+                <div class="tile-t"><span>3D Projects</span><small>4 projects</small></div>
+              </a>
+            </div>
+            <div class="tile-wrap" data-tab="motion">
+              <a class="tile" href="#/backscreen">
+                <div class="fig">
+                  <img
+                    src="img/backscreen/visual-01-thumb.webp"
+                    alt="Visuals Backscreen cover"
+                    loading="lazy"
+                    decoding="async">
+                </div>
+                <div class="tile-t"><span>Visuals Backscreen</span><small>1 visual</small></div>
+              </a>
+            </div>
+            <div class="tile-wrap" data-tab="personal">
+              <a class="tile" href="#/exhibitions">
+                <div class="fig">
+                  <img
+                    src="img/exhibitions/exhibition-01-thumb.webp"
+                    alt="Exhibitions cover"
+                    loading="lazy"
+                    decoding="async">
+                </div>
+                <div class="tile-t"><span>Exhibitions</span><small>2 exhibitions</small></div>
+              </a>
+            </div>
+            <div class="tile-wrap" data-tab="personal">
+              <a class="tile" href="#/photography">
+                <div class="fig">
+                  <img
+                    src="img/photography/01.jpeg"
+                    alt="Photography &amp; Editing cover"
+                    loading="lazy"
+                    decoding="async">
+                </div>
+                <div class="tile-t"><span>Photography &amp; Editing</span><small>6 photos</small></div>
+              </a>
+            </div>
+            <div class="tile-wrap" data-tab="personal">
+              <a class="tile" href="#/my-artworks">
+                <div class="fig">
+                  <img src="assets/myartworks/07.png" alt="My Artworks cover" loading="lazy" decoding="async">
+                </div>
+                <div class="tile-t"><span>My Artworks</span><small>9 artworks</small></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="view" id="view-about" data-title="About" aria-labelledby="h-about">
+        <div class="wrap">
+          <header class="view-head">
+            <h1 id="h-about" tabindex="-1">About</h1>
+          </header>
+          <p class="about-text">
+            21-year-old Graphic Designer &amp; Software Engineering student at the Egyptian Chinese University.
+            6+ years of hands-on experience in Adobe Photoshop, Illustrator, and a wide range of creative tools.
+            Passionate about visual identity, music branding, poster art, 3D design, and photography.
+          </p>
+          <ul class="tools" aria-label="Tools">
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Figma</li>
+            <li>Premiere Pro</li>
+            <li>After Effects</li>
+            <li>Blender</li>
+            <li>Resolume Arena</li>
+            <li>Photography</li>
+            <li>6 Years Exp.</li>
+          </ul>
+          <h2 class="stack-title">Tech stack</h2>
+          <div class="stack">
+            <div>
+              <h3>Languages</h3>
+              <ul>
+                <li>C++</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Web</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Mobile</h3>
+              <ul>
+                <li>Flutter</li>
+                <li>Expo</li>
+                <li>React Native</li>
+              </ul>
+            </div>
+            <div>
+              <h3>AI &amp; Vision</h3>
+              <ul>
+                <li>Computer Vision with Python</li>
+                <li>AI tools</li>
+              </ul>
+            </div>
+          </div>
+          <div style="margin-top:3rem;display:flex;flex-wrap:wrap;gap:.8rem">
+            <a class="btn solid" href="#/work">See the work</a>
+            <a class="btn" href="#/contact">Contact me</a>
+          </div>
+        </div>
+      </section>
+      <section class="view" id="view-brands" data-title="Work Experience" aria-labelledby="h-brands">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>Client Work</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-brands" tabindex="-1">Work Experience</h1>
+            <p class="lede">
+              Selected organizations and creative teams I have worked with, with the years of collaboration shown
+              below.
+            </p>
+          </header>
+          <ul class="gal g-sq">
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/brands/sout-sharq-thumb.webp"
+                  data-caption="Sout Sharq"
+                  aria-label="View larger: Sout Sharq">
+                  <img
+                    src="img/brands/sout-sharq-thumb.webp"
+                    alt="Sout Sharq"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+              <p class="cap"><strong>Sout Sharq</strong><span>2022 – Present</span></p>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/brands/mtown-studios-thumb.webp"
+                  data-caption="Mtown Studios"
+                  aria-label="View larger: Mtown Studios">
+                  <img
+                    src="img/brands/mtown-studios-thumb.webp"
+                    alt="Mtown Studios"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+              <p class="cap"><strong>Mtown Studios</strong><span>2022 – 2024</span></p>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/brands/im-rubiks-thumb.webp"
+                  data-caption="IM Rubiks"
+                  aria-label="View larger: IM Rubiks">
+                  <img src="img/brands/im-rubiks-thumb.webp" alt="IM Rubiks" loading="lazy" decoding="async">
+                </a>
+              </div>
+              <p class="cap"><strong>IM Rubiks</strong><span>2024 – 2025</span></p>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/brands/olyve-thumb.webp"
+                  data-caption="OLYVE"
+                  aria-label="View larger: OLYVE">
+                  <img src="img/brands/olyve-thumb.webp" alt="OLYVE" loading="lazy" decoding="async">
+                </a>
+              </div>
+              <p class="cap"><strong>OLYVE</strong><span>2025 – 2026</span></p>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/brands/buscar.webp.webp"
+                  data-caption="Buscar Brand"
+                  aria-label="View larger: Buscar Brand">
+                  <img src="img/brands/buscar.webp.webp" alt="Buscar Brand" loading="lazy" decoding="async">
+                </a>
+              </div>
+              <p class="cap"><strong>Buscar Brand</strong><span>Freelancing</span></p>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/brands/mga.png"
+                  data-caption="MGA Events"
+                  aria-label="View larger: MGA Events">
+                  <img src="img/brands/mga.png" alt="MGA Events" loading="lazy" decoding="async">
+                </a>
+              </div>
+              <p class="cap"><strong>MGA Events</strong><span>2026 – Present</span></p>
+            </li>
+          </ul>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/my-artworks"><small>← Previous</small><strong>My Artworks</strong></a>
+            <a class="next" href="#/posters"><small>Next →</small><strong>Official Posters</strong></a>
+          </nav>
+        </div>
+      </section>
+      <section class="view" id="view-posters" data-title="Official Posters" aria-labelledby="h-posters">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>Client Work</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-posters" tabindex="-1">Official Posters</h1>
+            <p class="lede">
+              Official posters curated for brands and artists for their concerts, releases, and events — designed
+              using Adobe Photoshop and Illustrator, combining strong typographic systems with cinematic visuals
+              to capture the energy of each moment and drive real-world attendance and engagement.
+            </p>
+          </header>
+          <ul class="gal g-sq">
+            <li>
+              <div class="fig sq">
+                <a
+                  class="lb"
+                  href="img/posters/cairoke-thumb.webp"
+                  data-caption="Cairoke poster"
+                  aria-label="View larger: Cairoke poster">
+                  <img
+                    src="img/posters/cairoke-thumb.webp"
+                    alt="Cairoke poster"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq">
+                <a
+                  class="lb"
+                  href="img/posters/mtown-thumb.webp"
+                  data-caption="M-Town poster"
+                  aria-label="View larger: M-Town poster">
+                  <img src="img/posters/mtown-thumb.webp" alt="M-Town poster" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq">
+                <a
+                  class="lb"
+                  href="img/posters/husayen-thumb.webp"
+                  data-caption="Husayen poster"
+                  aria-label="View larger: Husayen poster">
+                  <img
+                    src="img/posters/husayen-thumb.webp"
+                    alt="Husayen poster"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq">
+                <a
+                  class="lb"
+                  href="img/posters/young-amr-thumb.webp"
+                  data-caption="Young Amr poster"
+                  aria-label="View larger: Young Amr poster">
+                  <img
+                    src="img/posters/young-amr-thumb.webp"
+                    alt="Young Amr poster"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+          </ul>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/brands"><small>← Previous</small><strong>Work Experience</strong></a>
+            <a class="next" href="#/stories"><small>Next →</small><strong>Official Stories</strong></a>
+          </nav>
+        </div>
+      </section>
+      <section class="view" id="view-stories" data-title="Official Stories" aria-labelledby="h-stories">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>Client Work</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-stories" tabindex="-1">Official Stories</h1>
+            <p class="lede">
+              Vertical story formats tailored for Instagram and social platforms — fast, punchy, and visually
+              consistent with each artist's brand identity, crafted in Photoshop for maximum mobile-first impact.
+            </p>
+          </header>
+          <ul class="gal g-st">
+            <li>
+              <div class="fig st">
+                <a
+                  class="lb"
+                  href="img/stories/cairoke_story.png"
+                  data-caption="Cairoke story"
+                  aria-label="View larger: Cairoke story">
+                  <img
+                    src="img/stories/cairoke_story.png"
+                    alt="Cairoke story"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig st">
+                <a
+                  class="lb"
+                  href="img/stories/story_poster.jpg"
+                  data-caption="Story poster"
+                  aria-label="View larger: Story poster">
+                  <img src="img/stories/story_poster.jpg" alt="Story poster" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig st">
+                <a
+                  class="lb"
+                  href="img/stories/husayen_story.jpg"
+                  data-caption="Husayen story"
+                  aria-label="View larger: Husayen story">
+                  <img
+                    src="img/stories/husayen_story.jpg"
+                    alt="Husayen story"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig st">
+                <a
+                  class="lb"
+                  href="img/stories/young_amr_story.jpg"
+                  data-caption="Young Amr story"
+                  aria-label="View larger: Young Amr story">
+                  <img
+                    src="img/stories/young_amr_story.jpg"
+                    alt="Young Amr story"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+          </ul>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/posters"><small>← Previous</small><strong>Official Posters</strong></a>
+            <a class="next" href="#/social"><small>Next →</small><strong>Social Media Posts</strong></a>
+          </nav>
+        </div>
+      </section>
+      <section class="view" id="view-social" data-title="Social Media Posts" aria-labelledby="h-social">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>Client Work</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-social" tabindex="-1">Social Media Posts</h1>
+            <p class="lede">
+              A curated selection of social media content crafted for various artists and brands. Each post is
+              designed to maximize visual impact on platforms like Instagram and Facebook — balancing strong
+              typography, bold color choices, and brand-consistent aesthetics to drive engagement and online
+              presence.
+            </p>
+          </header>
+          <ul class="gal g-s3">
+            <li>
+              <div class="fig st">
+                <a
+                  class="lb"
+                  href="img/social/01.png"
+                  data-caption="Post 01"
+                  aria-label="View larger: Post 01">
+                  <img src="img/social/01.png" alt="Post 01" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig st">
+                <a
+                  class="lb"
+                  href="img/social/02.png"
+                  data-caption="Post 02"
+                  aria-label="View larger: Post 02">
+                  <img src="img/social/02.png" alt="Post 02" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig st">
+                <a
+                  class="lb"
+                  href="img/social/03.jpg"
+                  data-caption="Post 03"
+                  aria-label="View larger: Post 03">
+                  <img src="img/social/03.jpg" alt="Post 03" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+          </ul>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/stories"><small>← Previous</small><strong>Official Stories</strong></a>
+            <a class="next" href="#/artworks"><small>Next →</small><strong>Official Artworks</strong></a>
+          </nav>
+        </div>
+      </section>
+      <section class="view" id="view-artworks" data-title="Official Artworks" aria-labelledby="h-artworks">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>Client Work</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-artworks" tabindex="-1">Official Artworks</h1>
+            <p class="lede">
+              A collection of graphic artworks created for official releases — album covers, single artwork, and
+              visual identity pieces produced in Adobe Photoshop and Illustrator for artists and labels.
+            </p>
+          </header>
+          <ul class="gal g-sq">
+            <li>
+              <div class="fig sq">
+                <a
+                  class="lb"
+                  href="img/artworks/artwork-01-thumb.webp"
+                  data-caption="Official artwork 1"
+                  aria-label="View larger: Official artwork 1">
+                  <img
+                    src="img/artworks/artwork-01-thumb.webp"
+                    alt="Official artwork 1"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq">
+                <a
+                  class="lb"
+                  href="img/artworks/artwork-02-thumb.webp"
+                  data-caption="Official artwork 2"
+                  aria-label="View larger: Official artwork 2">
+                  <img
+                    src="img/artworks/artwork-02-thumb.webp"
+                    alt="Official artwork 2"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq">
+                <a
+                  class="lb"
+                  href="img/artworks/artwork-03-thumb.webp"
+                  data-caption="Official artwork 3"
+                  aria-label="View larger: Official artwork 3">
+                  <img
+                    src="img/artworks/artwork-03-thumb.webp"
+                    alt="Official artwork 3"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq">
+                <a
+                  class="lb"
+                  href="img/artworks/artwork-04-thumb.webp"
+                  data-caption="Official artwork 4"
+                  aria-label="View larger: Official artwork 4">
+                  <img
+                    src="img/artworks/artwork-04-thumb.webp"
+                    alt="Official artwork 4"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq">
+                <a
+                  class="lb"
+                  href="img/artworks/artwork-07-thumb.webp"
+                  data-caption="Official artwork 5"
+                  aria-label="View larger: Official artwork 5">
+                  <img
+                    src="img/artworks/artwork-07-thumb.webp"
+                    alt="Official artwork 5"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq">
+                <a
+                  class="lb"
+                  href="img/artworks/artwork-08-thumb.webp"
+                  data-caption="Official artwork 6"
+                  aria-label="View larger: Official artwork 6">
+                  <img
+                    src="img/artworks/artwork-08-thumb.webp"
+                    alt="Official artwork 6"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+          </ul>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/social"><small>← Previous</small><strong>Social Media Posts</strong></a>
+            <a class="next" href="#/seniors"><small>Next →</small><strong>Seniors Kits</strong></a>
+          </nav>
+        </div>
+      </section>
+      <section class="view" id="view-seniors" data-title="Seniors Kits" aria-labelledby="h-seniors">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>Client Work</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-seniors" tabindex="-1">Seniors Kits</h1>
+            <p class="lede">
+              A full graduation kit design series in collaboration with OLYVE — crafting cohesive visual packages
+              for seniors including identity templates, banners, and keepsake designs using Adobe Photoshop and
+              Illustrator.
+            </p>
+          </header>
+          <div class="sen">
+            <figure>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/front-SIS.png"
+                  data-caption="Seniors kit — T-shirt front"
+                  aria-label="View larger: Seniors kit — T-shirt front">
+                  <img
+                    src="img/seniors/front-SIS.png"
+                    alt="Seniors kit — T-shirt front"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+              <div class="sen-label">
+                <span>T-shirt — Front</span>
+                <button type="button" data-scroll="sen-back">Back ↓</button>
+              </div>
+            </figure>
+            <figure id="sen-back">
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/back-SIS.png"
+                  data-caption="Seniors kit — T-shirt back"
+                  aria-label="View larger: Seniors kit — T-shirt back">
+                  <img
+                    src="img/seniors/back-SIS.png"
+                    alt="Seniors kit — T-shirt back"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+              <div class="sen-label"><span>T-shirt — Back</span><span></span></div>
+            </figure>
+          </div>
+          <h2 class="sen-more">More designs</h2>
+          <ul class="gal g-sq">
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/senior-01-thumb.webp"
+                  data-caption="Seniors kit design 01"
+                  aria-label="View larger: Seniors kit design 01">
+                  <img
+                    src="img/seniors/senior-01-thumb.webp"
+                    alt="Seniors kit design 01"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/senior-02-thumb.webp"
+                  data-caption="Seniors kit design 02"
+                  aria-label="View larger: Seniors kit design 02">
+                  <img
+                    src="img/seniors/senior-02-thumb.webp"
+                    alt="Seniors kit design 02"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/senior-03-thumb.webp"
+                  data-caption="Seniors kit design 03"
+                  aria-label="View larger: Seniors kit design 03">
+                  <img
+                    src="img/seniors/senior-03-thumb.webp"
+                    alt="Seniors kit design 03"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/senior-04-thumb.webp"
+                  data-caption="Seniors kit design 04"
+                  aria-label="View larger: Seniors kit design 04">
+                  <img
+                    src="img/seniors/senior-04-thumb.webp"
+                    alt="Seniors kit design 04"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/senior-05-thumb.webp"
+                  data-caption="Seniors kit design 05"
+                  aria-label="View larger: Seniors kit design 05">
+                  <img
+                    src="img/seniors/senior-05-thumb.webp"
+                    alt="Seniors kit design 05"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/senior-07-thumb.webp"
+                  data-caption="Seniors kit design 07"
+                  aria-label="View larger: Seniors kit design 07">
+                  <img
+                    src="img/seniors/senior-07-thumb.webp"
+                    alt="Seniors kit design 07"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/senior-08-thumb.webp"
+                  data-caption="Seniors kit design 08"
+                  aria-label="View larger: Seniors kit design 08">
+                  <img
+                    src="img/seniors/senior-08-thumb.webp"
+                    alt="Seniors kit design 08"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/senior-09-thumb.webp"
+                  data-caption="Seniors kit design 09"
+                  aria-label="View larger: Seniors kit design 09">
+                  <img
+                    src="img/seniors/senior-09-thumb.webp"
+                    alt="Seniors kit design 09"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/senior-10-thumb.webp"
+                  data-caption="Seniors kit design 10"
+                  aria-label="View larger: Seniors kit design 10">
+                  <img
+                    src="img/seniors/senior-10-thumb.webp"
+                    alt="Seniors kit design 10"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/senior-11-thumb.webp"
+                  data-caption="Seniors kit design 11"
+                  aria-label="View larger: Seniors kit design 11">
+                  <img
+                    src="img/seniors/senior-11-thumb.webp"
+                    alt="Seniors kit design 11"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig sq contain">
+                <a
+                  class="lb"
+                  href="img/seniors/polo.png"
+                  data-caption="Seniors kit — polo"
+                  aria-label="View larger: Seniors kit — polo">
+                  <img src="img/seniors/polo.png" alt="Seniors kit — polo" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+          </ul>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/artworks"><small>← Previous</small><strong>Official Artworks</strong></a>
+            <a class="next" href="#/collab"><small>Next →</small><strong>Collaborations</strong></a>
+          </nav>
+        </div>
+      </section>
+      <section class="view" id="view-collab" data-title="Collaborations" aria-labelledby="h-collab">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>Client Work</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-collab" tabindex="-1">Collaborations</h1>
+            <p class="lede">
+              Collaborated with @marwnxo for Marwan Moussa — Snitch (Official Visualizer Video) released in 2022.
+            </p>
+          </header>
+          <ul class="gal g-1">
+            <li>
+              <div class="fig wd">
+                <a
+                  class="lb"
+                  href="img/collab/snitch-thumb.webp"
+                  data-caption="Snitch visualizer — Marwan Moussa"
+                  aria-label="View larger: Snitch visualizer — Marwan Moussa">
+                  <img
+                    src="img/collab/snitch-thumb.webp"
+                    alt="Snitch visualizer — Marwan Moussa"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+          </ul>
+          <a
+            class="btn solid collab-btn"
+            href="https://youtu.be/YvSO_C6XwZ4?si=XqxBdUTgSkTjDhp9"
+            target="_blank"
+            rel="noopener">
+            ▶ Watch the visualizer on YouTube
+          </a>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/seniors"><small>← Previous</small><strong>Seniors Kits</strong></a>
+            <a class="next" href="#/3d"><small>Next →</small><strong>3D Projects</strong></a>
+          </nav>
+        </div>
+      </section>
+      <section class="view" id="view-3d" data-title="3D Projects" aria-labelledby="h-3d">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>3D &amp; Motion</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-3d" tabindex="-1">3D Projects</h1>
+            <p class="lede">
+              Some of my official 3D projects crafted using Blender — spanning product CGI, logo animations, and
+              motion renders. Each project combines 3D modeling, lighting, and compositing to produce cinematic-
+              quality visuals for artists, brands, and live events.
+            </p>
+          </header>
+          <ul class="gal g-st">
+            <li>
+              <div class="fig st">
+                <a
+                  class="lb"
+                  href="img/3d/Render1.png"
+                  data-caption="CGI For ElMalahy"
+                  aria-label="View larger: CGI For ElMalahy">
+                  <img src="img/3d/Render1.png" alt="CGI For ElMalahy" loading="lazy" decoding="async">
+                </a>
+              </div>
+              <p class="cap">
+                <strong>CGI For ElMalahy</strong>
+                <a
+                  class="watch"
+                  href="https://www.instagram.com/reel/DAawdnnNGBM/"
+                  target="_blank"
+                  rel="noopener">
+                  ▶ Watch
+                </a>
+              </p>
+            </li>
+            <li>
+              <div class="fig st">
+                <a
+                  class="lb"
+                  href="img/3d/render-02-thumb.webp"
+                  data-caption="CGI 02"
+                  aria-label="View larger: CGI 02">
+                  <img src="img/3d/render-02-thumb.webp" alt="CGI 02" loading="lazy" decoding="async">
+                </a>
+              </div>
+              <p class="cap">
+                <strong>CGI 02</strong>
+                <a
+                  class="watch"
+                  href="https://www.instagram.com/reel/DAQ794HtPtz/"
+                  target="_blank"
+                  rel="noopener">
+                  ▶ Watch
+                </a>
+              </p>
+            </li>
+            <li>
+              <div class="fig st">
+                <a
+                  class="lb"
+                  href="img/3d/render-03-thumb.webp"
+                  data-caption="CGI 03"
+                  aria-label="View larger: CGI 03">
+                  <img src="img/3d/render-03-thumb.webp" alt="CGI 03" loading="lazy" decoding="async">
+                </a>
+              </div>
+              <p class="cap">
+                <strong>CGI 03</strong>
+                <a
+                  class="watch"
+                  href="https://www.instagram.com/reel/DM8cgzTND1q/"
+                  target="_blank"
+                  rel="noopener">
+                  ▶ Watch
+                </a>
+              </p>
+            </li>
+            <li>
+              <div class="fig st">
+                <a
+                  class="lb"
+                  href="img/3d/render-04-thumb.webp"
+                  data-caption="Logo 3D for SOUTSHARQ"
+                  aria-label="View larger: Logo 3D for SOUTSHARQ">
+                  <img
+                    src="img/3d/render-04-thumb.webp"
+                    alt="Logo 3D for SOUTSHARQ"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+              <p class="cap">
+                <strong>Logo 3D for SOUTSHARQ</strong>
+                <a
+                  class="watch"
+                  href="https://www.instagram.com/tv/CaYH5bjPho7/"
+                  target="_blank"
+                  rel="noopener">
+                  ▶ Watch
+                </a>
+              </p>
+            </li>
+          </ul>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/collab"><small>← Previous</small><strong>Collaborations</strong></a>
+            <a class="next" href="#/backscreen"><small>Next →</small><strong>Visuals Backscreen</strong></a>
+          </nav>
+        </div>
+      </section>
+      <section
+        class="view"
+        id="view-backscreen"
+        data-title="Visuals Backscreen"
+        aria-labelledby="h-backscreen">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>3D &amp; Motion</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-backscreen" tabindex="-1">Visuals Backscreen</h1>
+            <p class="lede">
+              Visual video content produced in 3D using Blender — designed to run as live backscreen projections
+              during concerts and events, showcased and operated through Resolume Arena for real-time VJing and
+              stage visual performance.
+            </p>
+          </header>
+          <ul class="gal g-1">
+            <li>
+              <div class="fig wd">
+                <a
+                  class="lb"
+                  href="img/backscreen/visual-01-thumb.webp"
+                  data-caption="Visual backscreen 01"
+                  aria-label="View larger: Visual backscreen 01">
+                  <img
+                    src="img/backscreen/visual-01-thumb.webp"
+                    alt="Visual backscreen 01"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+          </ul>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/3d"><small>← Previous</small><strong>3D Projects</strong></a>
+            <a class="next" href="#/exhibitions"><small>Next →</small><strong>Exhibitions</strong></a>
+          </nav>
+        </div>
+      </section>
+      <section class="view" id="view-exhibitions" data-title="Exhibitions" aria-labelledby="h-exhibitions">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>Personal</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-exhibitions" tabindex="-1">Exhibitions</h1>
+            <p class="lede">
+              Selected works displayed in physical exhibitions across the region — from Dubai to Cairo —
+              showcasing printed artwork and photography that bridges digital creativity with tangible, gallery-
+              level presentation.
+            </p>
+          </header>
+          <ul class="gal g-ex">
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/exhibitions/exhibition-01-thumb.webp"
+                  data-caption="Exhibition 01"
+                  aria-label="View larger: Exhibition 01">
+                  <img
+                    src="img/exhibitions/exhibition-01-thumb.webp"
+                    alt="Exhibition 01"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+              <p class="cap">
+                <strong>Exhibition 01</strong>
+                <span>Zeman Awwal Exhibition — Dubai Mall, Emirates – 2021</span>
+              </p>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/exhibitions/exhibition-02-thumb.webp"
+                  data-caption="Exhibition 02"
+                  aria-label="View larger: Exhibition 02">
+                  <img
+                    src="img/exhibitions/exhibition-02-thumb.webp"
+                    alt="Exhibition 02"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+              <p class="cap">
+                <strong>Exhibition 02</strong>
+                <span>Bedoun NEQAT Exhibition — Cairo, Egypt – 2021</span>
+              </p>
+            </li>
+          </ul>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/backscreen"><small>← Previous</small><strong>Visuals Backscreen</strong></a>
+            <a class="next" href="#/photography">
+              <small>Next →</small>
+              <strong>Photography &amp; Editing</strong>
+            </a>
+          </nav>
+        </div>
+      </section>
+      <section
+        class="view"
+        id="view-photography"
+        data-title="Photography &amp; Editing"
+        aria-labelledby="h-photography">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>Personal</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-photography" tabindex="-1">Photography &amp; Editing</h1>
+            <p class="lede">
+              Some of my photography content shot on a Digi Cam, iPhone, and rented professional cameras —
+              covering concerts, portraits, and street moments, with post-processing and color grading handled in
+              Adobe Photoshop.
+            </p>
+          </header>
+          <ul class="gal g-nat">
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/photography/01.jpeg"
+                  data-caption="Photograph 1"
+                  aria-label="View larger: Photograph 1">
+                  <img src="img/photography/01.jpeg" alt="Photograph 1" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/photography/02.jpeg"
+                  data-caption="Photograph 2"
+                  aria-label="View larger: Photograph 2">
+                  <img src="img/photography/02.jpeg" alt="Photograph 2" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/photography/03.jpeg"
+                  data-caption="Photograph 3"
+                  aria-label="View larger: Photograph 3">
+                  <img src="img/photography/03.jpeg" alt="Photograph 3" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/photography/04.jpeg"
+                  data-caption="Photograph 4"
+                  aria-label="View larger: Photograph 4">
+                  <img src="img/photography/04.jpeg" alt="Photograph 4" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/photography/05.jpeg"
+                  data-caption="Photograph 5"
+                  aria-label="View larger: Photograph 5">
+                  <img src="img/photography/05.jpeg" alt="Photograph 5" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/photography/06.jpeg"
+                  data-caption="Photograph 6"
+                  aria-label="View larger: Photograph 6">
+                  <img src="img/photography/06.jpeg" alt="Photograph 6" loading="lazy" decoding="async">
+                </a>
+              </div>
+            </li>
+          </ul>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/exhibitions"><small>← Previous</small><strong>Exhibitions</strong></a>
+            <a class="next" href="#/my-artworks"><small>Next →</small><strong>My Artworks</strong></a>
+          </nav>
+        </div>
+      </section>
+      <section class="view" id="view-my-artworks" data-title="My Artworks" aria-labelledby="h-my-artworks">
+        <div class="wrap">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="#/work">All projects</a>
+            <span>/</span>
+            <span>Personal</span>
+          </nav>
+          <header class="view-head">
+            <h1 id="h-my-artworks" tabindex="-1">My Artworks</h1>
+            <p class="lede">
+              That's some of my artworks that have been showcased widely, printed and for sale — a personal
+              collection of graphic pieces blending raw visual energy, and street-level culture into printed art
+              that lives beyond the screen.
+            </p>
+          </header>
+          <ul class="gal g-nat">
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/my-artworks/art-07-thumb.webp"
+                  data-caption="Artwork 7"
+                  aria-label="View larger: Artwork 7">
+                  <img
+                    src="img/my-artworks/art-07-thumb.webp"
+                    alt="Artwork 7"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/my-artworks/art-06-thumb.webp"
+                  data-caption="Artwork 6"
+                  aria-label="View larger: Artwork 6">
+                  <img
+                    src="img/my-artworks/art-06-thumb.webp"
+                    alt="Artwork 6"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/my-artworks/art-05-thumb.webp"
+                  data-caption="Artwork 5"
+                  aria-label="View larger: Artwork 5">
+                  <img
+                    src="img/my-artworks/art-05-thumb.webp"
+                    alt="Artwork 5"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/my-artworks/art-01-thumb.webp"
+                  data-caption="Artwork 1"
+                  aria-label="View larger: Artwork 1">
+                  <img
+                    src="img/my-artworks/art-01-thumb.webp"
+                    alt="Artwork 1"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/my-artworks/art-02-thumb.webp"
+                  data-caption="Artwork 2"
+                  aria-label="View larger: Artwork 2">
+                  <img
+                    src="img/my-artworks/art-02-thumb.webp"
+                    alt="Artwork 2"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/my-artworks/art-03-thumb.webp"
+                  data-caption="Artwork 3"
+                  aria-label="View larger: Artwork 3">
+                  <img
+                    src="img/my-artworks/art-03-thumb.webp"
+                    alt="Artwork 3"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/my-artworks/art-04-thumb.webp"
+                  data-caption="Artwork 4"
+                  aria-label="View larger: Artwork 4">
+                  <img
+                    src="img/my-artworks/art-04-thumb.webp"
+                    alt="Artwork 4"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/my-artworks/art-08-thumb.webp"
+                  data-caption="Artwork 8"
+                  aria-label="View larger: Artwork 8">
+                  <img
+                    src="img/my-artworks/art-08-thumb.webp"
+                    alt="Artwork 8"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="fig nat">
+                <a
+                  class="lb"
+                  href="img/my-artworks/art-09-thumb.webp"
+                  data-caption="Artwork 9"
+                  aria-label="View larger: Artwork 9">
+                  <img
+                    src="img/my-artworks/art-09-thumb.webp"
+                    alt="Artwork 9"
+                    loading="lazy"
+                    decoding="async">
+                </a>
+              </div>
+            </li>
+          </ul>
+          <nav class="pager" aria-label="More collections">
+            <a href="#/photography"><small>← Previous</small><strong>Photography &amp; Editing</strong></a>
+            <a class="next" href="#/brands"><small>Next →</small><strong>Work Experience</strong></a>
+          </nav>
+        </div>
+      </section>
+      <section class="view" id="view-contact" data-title="Contact" aria-labelledby="h-contact">
+        <div class="wrap">
+          <header class="view-head">
+            <h1 id="h-contact" tabindex="-1">Let's work together</h1>
+            <p class="lede">
+              Posters, branding, 3D, visuals — send a message or find me on the platforms below.
+            </p>
+          </header>
+          <div class="rows">
+            <a class="row" href="tel:+201000703564">
+              <small>
+                <svg class="ic" aria-hidden="true">
+                  <use href="#i-phone"/>
+                </svg>
+                Phone
+              </small>
+              <b>+20 01000703564</b>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="row" href="mailto:yucifmohamed@gmail.com">
+              <small>
+                <svg class="ic" aria-hidden="true">
+                  <use href="#i-email"/>
+                </svg>
+                Email
+              </small>
+              <b>yucifmohamed@gmail.com</b>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="row" href="https://instagram.com/yusf4u" target="_blank" rel="noopener">
+              <small>
+                <svg class="ic" aria-hidden="true">
+                  <use href="#i-instagram"/>
+                </svg>
+                Instagram
+              </small>
+              <b>@yusf4u</b>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="row" href="https://behance.net/yusf4u" target="_blank" rel="noopener">
+              <small>
+                <svg class="ic" aria-hidden="true">
+                  <use href="#i-behance"/>
+                </svg>
+                Behance
+              </small>
+              <b>yusf4u</b>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="row" href="https://linkedin.com/in/yusfmohamed" target="_blank" rel="noopener">
+              <small>
+                <svg class="ic" aria-hidden="true">
+                  <use href="#i-linkedin"/>
+                </svg>
+                LinkedIn
+              </small>
+              <b>yusfmohamed</b>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="row" href="https://github.com/yusfmohamed" target="_blank" rel="noopener">
+              <small>
+                <svg class="ic" aria-hidden="true">
+                  <use href="#i-github"/>
+                </svg>
+                GitHub
+              </small>
+              <b>yusfmohamed</b>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap foot">
+      <p>© <span id="year">2026</span> Youssef Mohamed — Graphic Designer &amp; Software Engineer</p>
+    </footer>
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <button class="lb-btn lb-close" type="button" aria-label="Close">✕</button>
+      <button class="lb-btn lb-prev" type="button" aria-label="Previous image">‹</button>
+      <button class="lb-btn lb-next" type="button" aria-label="Next image">›</button>
+      <figure class="lb-stage">
+        <img id="lb-img" alt="">
+        <figcaption><span id="lb-cap"></span><span id="lb-count"></span></figcaption>
+      </figure>
     </div>
-  </div>
-</section>
-<section class="view" id="view-about" data-title="About" aria-labelledby="h-about">
-  <div class="wrap narrow">
-    <header class="view-head">
-      <div class="avatar" aria-hidden="true">YM</div>
-      <h1 id="h-about" tabindex="-1">Youssef Mohamed</h1>
-      <p class="role">Graphic Designer &amp; Software Engineering Student</p>
-    </header>
-    <p class="about-text">21-year-old Graphic Designer &amp; Software Engineering student at the Egyptian Chinese University. 6+ years of hands-on experience in Adobe Photoshop, Illustrator, and a wide range of creative tools. Passionate about visual identity, music branding, poster art, 3D design, and photography.</p>
-    <ul class="tools big"><li>Adobe Photoshop</li><li>Adobe Illustrator</li><li>Adobe Premiere Pro</li><li>Adobe After Effects</li><li>Blender</li><li>Figma</li><li>Photography</li><li>6 Years Exp.</li></ul>
-    <h2 class="stack-title">Tech stack</h2>
-    <div class="stack">
-      <div class="stack-group"><h3>Languages</h3><ul><li>C++</li><li>Python</li><li>JavaScript</li></ul></div>
-      <div class="stack-group"><h3>Web</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
-      <div class="stack-group"><h3>Mobile</h3><ul><li>Flutter</li><li>Expo</li><li>React Native</li></ul></div>
-      <div class="stack-group"><h3>AI &amp; Vision</h3><ul><li>Computer Vision with Python</li><li>AI tools</li></ul></div>
-    </div>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#/work">See the work</a>
-      <a class="btn btn-ghost" href="#/contact">Contact me</a>
-    </div>
-  </div>
-</section>
-<section class="view" id="view-brands" data-title="Work Experience" aria-labelledby="h-brands">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>Client Work</span></nav>
-    <header class="view-head">
-      <h1 id="h-brands" tabindex="-1">Work Experience</h1>
-      <p class="lede">Selected organizations and creative teams I have worked with, with the years of collaboration shown below.</p>
-    </header>
-    <ul class="gallery g-brands">
-<li><div class="card media square"><a class="lb " href="img/brands/sout-sharq.webp" data-caption="Sout Sharq" data-w="1800" data-h="1200" aria-label="View larger: Sout Sharq"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/brands/sout-sharq-thumb.webp" width="720" height="480" alt="Sout Sharq" loading="lazy" decoding="async"></a></div><p class="cap"><strong>Sout Sharq</strong><span>2022 – Present</span></p></li>
-<li><div class="card media square"><a class="lb " href="img/brands/mtown-studios.webp" data-caption="Mtown Studios" data-w="200" data-h="200" aria-label="View larger: Mtown Studios"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/brands/mtown-studios-thumb.webp" width="200" height="200" alt="Mtown Studios" loading="lazy" decoding="async"></a></div><p class="cap"><strong>Mtown Studios</strong><span>2022 – 2024</span></p></li>
-<li><div class="card media square"><a class="lb " href="img/brands/im-rubiks.webp" data-caption="IM Rubiks" data-w="800" data-h="800" aria-label="View larger: IM Rubiks"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/brands/im-rubiks-thumb.webp" width="500" height="500" alt="IM Rubiks" loading="lazy" decoding="async"></a></div><p class="cap"><strong>IM Rubiks</strong><span>2024 – 2025</span></p></li>
-<li><div class="card media square"><a class="lb " href="img/brands/olyve.webp" data-caption="OLYVE" data-w="1575" data-h="1575" aria-label="View larger: OLYVE"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/brands/olyve-thumb.webp" width="720" height="630" alt="OLYVE" loading="lazy" decoding="async"></a></div><p class="cap"><strong>OLYVE</strong><span>2025 – 2026</span></p></li>
-<li><div class="card media square"><a class="lb " href="img/brands/buscar.webp.webp" data-caption="Buscar Brand" data-w="1575" data-h="1575" aria-label="View larger: Buscar Brand"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/brands/buscar.webp.webp" width="720" height="630" alt="Buscar Brand" loading="lazy" decoding="async"></a></div><p class="cap"><strong>Buscar Brand</strong><span>Freelancing</span></p></li>
-<li><div class="card media square"><a class="lb " href="img/brands/mga.webp" data-caption="MGA" data-w="500" data-h="500" aria-label="View larger: MGA"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/brands/mga.png" width="500" height="500" alt="MGA Events" loading="lazy" decoding="async"></a></div><p class="cap"><strong>MGA Events</strong><span>2026 – Present</span></p></li>
-</ul>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/my-artworks"><small>← Previous</small><strong>My Artworks</strong></a>
-      <a class="next" href="#/posters"><small>Next →</small><strong>Official Posters</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-posters" data-title="Official Posters" aria-labelledby="h-posters">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>Client Work</span></nav>
-    <header class="view-head">
-      <h1 id="h-posters" tabindex="-1">Official Posters</h1>
-      <p class="lede">Official posters curated for brands and artists for their concerts, releases, and events — designed using Adobe Photoshop and Illustrator, combining strong typographic systems with cinematic visuals to capture the energy of each moment and drive real-world attendance and engagement.</p>
-    </header>
-    <ul class="gallery g-square">
-<li><div class="card media square"><a class="lb " href="img/posters/cairoke.webp" data-caption="Cairoke poster" data-w="1080" data-h="1080" aria-label="View larger: Cairoke poster"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/posters/cairoke-thumb.webp" width="720" height="720" alt="Cairoke poster" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media square"><a class="lb " href="img/posters/mtown.webp" data-caption="M-Town poster" data-w="1800" data-h="1800" aria-label="View larger: M-Town poster"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/posters/mtown-thumb.webp" width="720" height="720" alt="M-Town poster" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media square"><a class="lb " href="img/posters/husayen.webp" data-caption="Husayen poster" data-w="1500" data-h="1500" aria-label="View larger: Husayen poster"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/posters/husayen-thumb.webp" width="720" height="720" alt="Husayen poster" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media square"><a class="lb " href="img/posters/young-amr.webp" data-caption="Young Amr poster" data-w="1800" data-h="1800" aria-label="View larger: Young Amr poster"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/posters/young-amr-thumb.webp" width="720" height="720" alt="Young Amr poster" loading="lazy" decoding="async"></a></div></li>
-</ul>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/brands"><small>← Previous</small><strong>Work Experience</strong></a>
-      <a class="next" href="#/stories"><small>Next →</small><strong>Official Stories</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-stories" data-title="Official Stories" aria-labelledby="h-stories">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>Client Work</span></nav>
-    <header class="view-head">
-      <h1 id="h-stories" tabindex="-1">Official Stories</h1>
-      <p class="lede">Vertical story formats tailored for Instagram and social platforms — fast, punchy, and visually consistent with each artist&#x27;s brand identity, crafted in Photoshop for maximum mobile-first impact.</p>
-    </header>
-    <ul class="gallery g-story">
-<li><div class="card media story"><a class="lb " href="img/stories/cairoke.webp" data-caption="Cairoke story" data-w="1012" data-h="1800" aria-label="View larger: Cairoke story"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/stories/cairoke_story.png" width="405" height="720" alt="Cairoke story" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media story"><a class="lb " href="img/stories/story-poster.webp" data-caption="Story poster" data-w="1012" data-h="1800" aria-label="View larger: Story poster"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/stories/story_poster.jpg" width="405" height="720" alt="Story poster" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media story"><a class="lb " href="img/stories/husayen.webp" data-caption="Husayen story" data-w="1012" data-h="1800" aria-label="View larger: Husayen story"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/stories/husayen_story.jpg" width="405" height="720" alt="Husayen story" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media story"><a class="lb " href="img/stories/young-amr.webp" data-caption="Young Amr story" data-w="1012" data-h="1800" aria-label="View larger: Young Amr story"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/stories/young_amr_story.jpg" width="405" height="720" alt="Young Amr story" loading="lazy" decoding="async"></a></div></li>
-</ul>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/posters"><small>← Previous</small><strong>Official Posters</strong></a>
-      <a class="next" href="#/social"><small>Next →</small><strong>Social Media Posts</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-social" data-title="Social Media Posts" aria-labelledby="h-social">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>Client Work</span></nav>
-    <header class="view-head">
-      <h1 id="h-social" tabindex="-1">Social Media Posts</h1>
-      <p class="lede">A curated selection of social media content crafted for various artists and brands. Each post is designed to maximize visual impact on platforms like Instagram and Facebook — balancing strong typography, bold color choices, and brand-consistent aesthetics to drive engagement and online presence.</p>
-    </header>
-    <ul class="gallery g-story3">
-<li><div class="card media story"><a class="lb " href="img/social/post-01.webp" data-caption="Post 01" data-w="1012" data-h="1800" aria-label="View larger: Social media post 1"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/social/01.png" width="405" height="720" alt="Social media post 1" loading="lazy" decoding="async"></a></div><p class="cap"><strong>Post 01</strong></p></li>
-<li><div class="card media story"><a class="lb " href="img/social/post-02.webp" data-caption="Post 02" data-w="1012" data-h="1800" aria-label="View larger: Social media post 2"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/social/02.png" width="405" height="720" alt="Social media post 2" loading="lazy" decoding="async"></a></div><p class="cap"><strong>Post 02</strong></p></li>
-<li><div class="card media story"><a class="lb " href="img/social/post-03.webp" data-caption="Post 03" data-w="1012" data-h="1800" aria-label="View larger: Social media post 3"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/social/03.jpg" width="405" height="720" alt="Social media post 3" loading="lazy" decoding="async"></a></div><p class="cap"><strong>Post 03</strong></p></li>
-</ul>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/stories"><small>← Previous</small><strong>Official Stories</strong></a>
-      <a class="next" href="#/artworks"><small>Next →</small><strong>Official Artworks</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-artworks" data-title="Official Artworks" aria-labelledby="h-artworks">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>Client Work</span></nav>
-    <header class="view-head">
-      <h1 id="h-artworks" tabindex="-1">Official Artworks</h1>
-      <p class="lede">A collection of graphic artworks created for official releases — album covers, single artwork, and visual identity pieces produced in Adobe Photoshop and Illustrator for artists and labels.</p>
-    </header>
-    <ul class="gallery g-square">
-<li><div class="card media square"><a class="lb " href="img/artworks/artwork-01.webp" data-caption="Official artwork 1" data-w="1800" data-h="1800" aria-label="View larger: Official artwork 1"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/artworks/artwork-01-thumb.webp" width="720" height="720" alt="Official artwork 1" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media square"><a class="lb " href="img/artworks/artwork-02.webp" data-caption="Official artwork 2" data-w="1800" data-h="1800" aria-label="View larger: Official artwork 2"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/artworks/artwork-02-thumb.webp" width="720" height="720" alt="Official artwork 2" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media square"><a class="lb " href="img/artworks/artwork-03.webp" data-caption="Official artwork 3" data-w="1800" data-h="1800" aria-label="View larger: Official artwork 3"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/artworks/artwork-03-thumb.webp" width="720" height="720" alt="Official artwork 3" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media square"><a class="lb " href="img/artworks/artwork-04.webp" data-caption="Official artwork 4" data-w="1500" data-h="1500" aria-label="View larger: Official artwork 4"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/artworks/artwork-04-thumb.webp" width="720" height="720" alt="Official artwork 4" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media square"><a class="lb " href="img/artworks/artwork-07.webp" data-caption="Official artwork 5" data-w="1800" data-h="1800" aria-label="View larger: Official artwork 5"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/artworks/artwork-07-thumb.webp" width="720" height="720" alt="Official artwork 5" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media square"><a class="lb " href="img/artworks/artwork-08.webp" data-caption="Official artwork 6" data-w="1800" data-h="1800" aria-label="View larger: Official artwork 6"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/artworks/artwork-08-thumb.webp" width="720" height="720" alt="Official artwork 6" loading="lazy" decoding="async"></a></div></li>
-</ul>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/social"><small>← Previous</small><strong>Social Media Posts</strong></a>
-      <a class="next" href="#/seniors"><small>Next →</small><strong>Seniors Kits</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-seniors" data-title="Seniors Kits" aria-labelledby="h-seniors">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>Client Work</span></nav>
-    <header class="view-head">
-      <h1 id="h-seniors" tabindex="-1">Seniors Kits</h1>
-      <p class="lede">A full graduation kit design series in collaboration with OLYVE — crafting cohesive visual packages for seniors including identity templates, banners, and keepsake designs using Adobe Photoshop and Illustrator.</p>
-    </header>
-    <ul class="gallery g-wide">
-<li><div class="card media wide"><a class="lb " href="img/seniors/senior-01.webp" data-caption="Seniors kit design 01" data-w="1800" data-h="1013" aria-label="View larger: Seniors kit design 01"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/senior-01-thumb.webp" width="720" height="405" alt="Seniors kit design 01" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media wide"><a class="lb " href="img/seniors/senior-02.webp" data-caption="Seniors kit design 02" data-w="1800" data-h="1013" aria-label="View larger: Seniors kit design 02"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/senior-02-thumb.webp" width="720" height="405" alt="Seniors kit design 02" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media wide"><a class="lb " href="img/seniors/senior-03.webp" data-caption="Seniors kit design 03" data-w="1800" data-h="1013" aria-label="View larger: Seniors kit design 03"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/senior-03-thumb.webp" width="720" height="405" alt="Seniors kit design 03" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media wide"><a class="lb " href="img/seniors/senior-04.webp" data-caption="Seniors kit design 04" data-w="1800" data-h="1013" aria-label="View larger: Seniors kit design 04"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/senior-04-thumb.webp" width="720" height="405" alt="Seniors kit design 04" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media wide"><a class="lb " href="img/seniors/senior-05.webp" data-caption="Seniors kit design 05" data-w="1800" data-h="1013" aria-label="View larger: Seniors kit design 05"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/senior-05-thumb.webp" width="720" height="405" alt="Seniors kit design 05" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media wide"><a class="lb " href="img/seniors/senior-07.webp" data-caption="Seniors kit design 07" data-w="1800" data-h="1013" aria-label="View larger: Seniors kit design 07"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/senior-07-thumb.webp" width="720" height="405" alt="Seniors kit design 07" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media wide"><a class="lb " href="img/seniors/senior-08.webp" data-caption="Seniors kit design 08" data-w="1800" data-h="1013" aria-label="View larger: Seniors kit design 08"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/senior-08-thumb.webp" width="720" height="405" alt="Seniors kit design 08" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media wide"><a class="lb " href="img/seniors/senior-09.webp" data-caption="Seniors kit design 09" data-w="1800" data-h="1013" aria-label="View larger: Seniors kit design 09"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/senior-09-thumb.webp" width="720" height="405" alt="Seniors kit design 09" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media wide"><a class="lb " href="img/seniors/senior-10.webp" data-caption="Seniors kit design 10" data-w="1800" data-h="1013" aria-label="View larger: Seniors kit design 10"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/senior-10-thumb.webp" width="720" height="405" alt="Seniors kit design 10" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media wide"><a class="lb " href="img/seniors/senior-11.webp" data-caption="Seniors kit design 11" data-w="1800" data-h="977" aria-label="View larger: Seniors kit design 11"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/senior-11-thumb.webp" width="720" height="391" alt="Seniors kit design 11" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media wide"><a class="lb " href="img/seniors/polo.png" data-caption="Seniors kit design 11" data-w="1800" data-h="977" aria-label="View larger: Seniors kit design 11"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/seniors/polo.png" width="720" height="391" alt="Seniors kit design 11" loading="lazy" decoding="async"></a></div></li>
-</ul>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/artworks"><small>← Previous</small><strong>Official Artworks</strong></a>
-      <a class="next" href="#/collab"><small>Next →</small><strong>Collaborations</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-collab" data-title="Collaborations" aria-labelledby="h-collab">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>Client Work</span></nav>
-    <header class="view-head">
-      <h1 id="h-collab" tabindex="-1">Collaborations</h1>
-      <p class="lede">Collaborated with @marwnxo for Marwan Moussa — Snitch (Official Visualizer Video) released in 2022.</p>
-    </header>
-    <div class="collab">
-<div class="card media wide"><a class="lb " href="img/collab/snitch.webp" data-caption="Snitch visualizer — Marwan Moussa" data-w="1800" data-h="1013" aria-label="View larger: Snitch visualizer — Marwan Moussa"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/collab/snitch-thumb.webp" width="720" height="405" alt="Snitch visualizer — Marwan Moussa" loading="lazy" decoding="async"></a></div>
-<a class="btn btn-primary" href="https://youtu.be/YvSO_C6XwZ4?si=XqxBdUTgSkTjDhp9" target="_blank" rel="noopener">▶ Watch the visualizer on YouTube</a>
-</div>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/seniors"><small>← Previous</small><strong>Seniors Kits</strong></a>
-      <a class="next" href="#/3d"><small>Next →</small><strong>3D Projects</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-3d" data-title="3D Projects" aria-labelledby="h-3d">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>3D &amp; Motion</span></nav>
-    <header class="view-head">
-      <h1 id="h-3d" tabindex="-1">3D Projects</h1>
-      <p class="lede">Some of my official 3D projects crafted using Blender — spanning product CGI, logo animations, and motion renders. Each project combines 3D modeling, lighting, and compositing to produce cinematic-quality visuals for artists, brands, and live events.</p>
-    </header>
-    <ul class="gallery g-story">
-<li><div class="card media story"><a class="lb " href="img/3d/render-01.webp" data-caption="CGI For ElMalahy" data-w="1012" data-h="1800" aria-label="View larger: CGI for ElMalahy"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/3d/Render1.png" width="405" height="720" alt="CGI for ElMalahy" loading="lazy" decoding="async"></a></div><p class="cap"><strong>CGI For ElMalahy</strong><a class="watch" href="https://www.instagram.com/reel/DAawdnnNGBM/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener">▶ Watch</a></p></li>
-<li><div class="card media story"><a class="lb " href="img/3d/render-02.webp" data-caption="CGI 02" data-w="1012" data-h="1800" aria-label="View larger: CGI 02"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/3d/render-02-thumb.webp" width="405" height="720" alt="CGI 02" loading="lazy" decoding="async"></a></div><p class="cap"><strong>CGI 02</strong><a class="watch" href="https://www.instagram.com/reel/DAQ794HtPtz/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener">▶ Watch</a></p></li>
-<li><div class="card media story"><a class="lb " href="img/3d/render-03.webp" data-caption="CGI 03" data-w="1012" data-h="1800" aria-label="View larger: CGI 03"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/3d/render-03-thumb.webp" width="405" height="720" alt="CGI 03" loading="lazy" decoding="async"></a></div><p class="cap"><strong>CGI 03</strong><a class="watch" href="https://www.instagram.com/reel/DM8cgzTND1q/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener">▶ Watch</a></p></li>
-<li><div class="card media story"><a class="lb " href="img/3d/render-04.webp" data-caption="Logo 3D for SOUTSHARQ" data-w="1012" data-h="1800" aria-label="View larger: 3D logo for SOUTSHARQ"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/3d/render-04-thumb.webp" width="405" height="720" alt="3D logo for SOUTSHARQ" loading="lazy" decoding="async"></a></div><p class="cap"><strong>Logo 3D for SOUTSHARQ</strong><a class="watch" href="https://www.instagram.com/tv/CaYH5bjPho7/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener">▶ Watch</a></p></li>
-</ul>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/collab"><small>← Previous</small><strong>Collaborations</strong></a>
-      <a class="next" href="#/backscreen"><small>Next →</small><strong>Visuals Backscreen</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-backscreen" data-title="Visuals Backscreen" aria-labelledby="h-backscreen">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>3D &amp; Motion</span></nav>
-    <header class="view-head">
-      <h1 id="h-backscreen" tabindex="-1">Visuals Backscreen</h1>
-      <p class="lede">Visual video content produced in 3D using Blender — designed to run as live backscreen projections during concerts and events, showcased and operated through Resolume Arena for real-time VJing and stage visual performance.</p>
-    </header>
-    <ul class="gallery g-wide1">
-<li><div class="card media wide"><a class="lb " href="img/backscreen/visual-01.webp" data-caption="Visual Backscreen 01" data-w="1800" data-h="1013" aria-label="View larger: Visual backscreen 01"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/backscreen/visual-01-thumb.webp" width="720" height="405" alt="Visual backscreen 01" loading="lazy" decoding="async"></a></div></li>
-</ul>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/3d"><small>← Previous</small><strong>3D Projects</strong></a>
-      <a class="next" href="#/exhibitions"><small>Next →</small><strong>Exhibitions</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-exhibitions" data-title="Exhibitions" aria-labelledby="h-exhibitions">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>Personal</span></nav>
-    <header class="view-head">
-      <h1 id="h-exhibitions" tabindex="-1">Exhibitions</h1>
-      <p class="lede">Selected works displayed in physical exhibitions across the region — from Dubai to Cairo — showcasing printed artwork and photography that bridges digital creativity with tangible, gallery-level presentation.</p>
-    </header>
-    <ul class="gallery g-exhibit">
-<li><div class="card media natural"><a class="lb " href="img/exhibitions/exhibition-01.webp" data-caption="Zeman Awwal Exhibition — Dubai Mall, Emirates – 2021" data-w="750" data-h="858" aria-label="View larger: Exhibition 01"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/exhibitions/exhibition-01-thumb.webp" width="629" height="720" alt="Exhibition 01" loading="lazy" decoding="async"></a></div><p class="cap"><strong>Exhibition 01</strong><span>Zeman Awwal Exhibition — Dubai Mall, Emirates – 2021</span></p></li>
-<li><div class="card media natural"><a class="lb " href="img/exhibitions/exhibition-02.webp" data-caption="Bedoun NEQAT Exhibition — Cairo, Egypt – 2021" data-w="1800" data-h="1350" aria-label="View larger: Exhibition 02"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/exhibitions/exhibition-02-thumb.webp" width="720" height="540" alt="Exhibition 02" loading="lazy" decoding="async"></a></div><p class="cap"><strong>Exhibition 02</strong><span>Bedoun NEQAT Exhibition — Cairo, Egypt – 2021</span></p></li>
-</ul>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/backscreen"><small>← Previous</small><strong>Visuals Backscreen</strong></a>
-      <a class="next" href="#/photography"><small>Next →</small><strong>Photography &amp; Editing</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-photography" data-title="Photography &amp; Editing" aria-labelledby="h-photography">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>Personal</span></nav>
-    <header class="view-head">
-      <h1 id="h-photography" tabindex="-1">Photography &amp; Editing</h1>
-      <p class="lede">Some of my photography content shot on a Digi Cam, iPhone, and rented professional cameras — covering concerts, portraits, and street moments, with post-processing and color grading handled in Adobe Photoshop.</p>
-    </header>
-    <ul class="gallery g-masonry">
-<li><div class="card media natural"><a class="lb " href="img/photography/photo-01.webp" data-caption="Photograph 1" data-w="888" data-h="1600" aria-label="View larger: Photograph 1"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/photography/01.jpeg" width="400" height="720" alt="Photograph 1" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/photography/photo-02.webp" data-caption="Photograph 2" data-w="720" data-h="1280" aria-label="View larger: Photograph 2"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/photography/02.jpeg" width="405" height="720" alt="Photograph 2" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/photography/photo-03.webp" data-caption="Photograph 3" data-w="900" data-h="1600" aria-label="View larger: Photograph 3"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/photography/03.jpeg" width="405" height="720" alt="Photograph 3" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/photography/photo-04.webp" data-caption="Photograph 4" data-w="960" data-h="1280" aria-label="View larger: Photograph 4"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/photography/04.jpeg" width="540" height="720" alt="Photograph 4" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/photography/photo-05.webp" data-caption="Photograph 5" data-w="960" data-h="1280" aria-label="View larger: Photograph 5"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/photography/05.jpeg" width="540" height="720" alt="Photograph 5" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/photography/photo-06.webp" data-caption="Photograph 6" data-w="854" data-h="1280" aria-label="View larger: Photograph 6"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/photography/06.jpeg" width="480" height="720" alt="Photograph 6" loading="lazy" decoding="async"></a></div></li>
-</ul>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/exhibitions"><small>← Previous</small><strong>Exhibitions</strong></a>
-      <a class="next" href="#/my-artworks"><small>Next →</small><strong>My Artworks</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-my-artworks" data-title="My Artworks" aria-labelledby="h-my-artworks">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="#/work">All work</a><span aria-hidden="true">/</span><span>Personal</span></nav>
-    <header class="view-head">
-      <h1 id="h-my-artworks" tabindex="-1">My Artworks</h1>
-      <p class="lede">That&#x27;s some of my artworks that have been showcased widely, printed and for sale — a personal collection of graphic pieces blending raw visual energy, and street-level culture into printed art that lives beyond the screen.</p>
-    </header>
-    <ul class="gallery g-masonry">
-<li><div class="card media natural"><a class="lb " href="img/my-artworks/art-07.webp" data-caption="Artwork 7" data-w="1439" data-h="1800" aria-label="View larger: Artwork 7"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/my-artworks/art-07-thumb.webp" width="576" height="720" alt="Artwork 7" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/my-artworks/art-06.webp" data-caption="Artwork 6" data-w="750" data-h="914" aria-label="View larger: Artwork 6"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/my-artworks/art-06-thumb.webp" width="591" height="720" alt="Artwork 6" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/my-artworks/art-05.webp" data-caption="Artwork 5" data-w="960" data-h="1280" aria-label="View larger: Artwork 5"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/my-artworks/art-05-thumb.webp" width="540" height="720" alt="Artwork 5" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/my-artworks/art-01.webp" data-caption="Artwork 1" data-w="1134" data-h="1440" aria-label="View larger: Artwork 1"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/my-artworks/art-01-thumb.webp" width="567" height="720" alt="Artwork 1" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/my-artworks/art-02.webp" data-caption="Artwork 2" data-w="1024" data-h="1024" aria-label="View larger: Artwork 2"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/my-artworks/art-02-thumb.webp" width="720" height="720" alt="Artwork 2" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/my-artworks/art-03.webp" data-caption="Artwork 3" data-w="1500" data-h="1500" aria-label="View larger: Artwork 3"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/my-artworks/art-03-thumb.webp" width="720" height="720" alt="Artwork 3" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/my-artworks/art-04.webp" data-caption="Artwork 4" data-w="1080" data-h="810" aria-label="View larger: Artwork 4"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/my-artworks/art-04-thumb.webp" width="720" height="540" alt="Artwork 4" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/my-artworks/art-08.webp" data-caption="Artwork 8" data-w="1800" data-h="1800" aria-label="View larger: Artwork 8"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/my-artworks/art-08-thumb.webp" width="720" height="720" alt="Artwork 8" loading="lazy" decoding="async"></a></div></li>
-<li><div class="card media natural"><a class="lb " href="img/my-artworks/art-09.webp" data-caption="Artwork 9" data-w="1500" data-h="1500" aria-label="View larger: Artwork 9"><!-- THUMBNAIL: Change this img src to replace the small preview. Change the closest parent link href to replace the full-size image. -->
-<img src="img/my-artworks/art-09-thumb.webp" width="720" height="720" alt="Artwork 9" loading="lazy" decoding="async"></a></div></li>
-</ul>
-    <nav class="pager" aria-label="More collections">
-      <a href="#/photography"><small>← Previous</small><strong>Photography &amp; Editing</strong></a>
-      <a class="next" href="#/brands"><small>Next →</small><strong>Work Experience</strong></a>
-    </nav>
-  </div>
-</section>
-<section class="view" id="view-contact" data-title="Contact" aria-labelledby="h-contact">
-  <div class="wrap narrow">
-    <header class="view-head center">
-      <h1 id="h-contact" tabindex="-1">Let's work together</h1>
-      <p class="lede">Posters, branding, 3D, visuals — send a message or find me on the platforms below.</p>
-    </header>
-    <div class="contact-grid">
-      <a class="contact-card" href="tel:+201000703564"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
-    </svg></span><span class="ct"><small>Phone</small><strong>+20 01000703564</strong></span></a>
-      <a class="contact-card" href="mailto:yucifmohamed@gmail.com"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-      <polyline points="22,6 12,13 2,6"/>
-    </svg></span><span class="ct"><small>Email</small><strong>yucifmohamed@gmail.com</strong></span></a>
-      <a class="contact-card" href="https://instagram.com/yusf4u" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
-      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-    </svg></span><span class="ct"><small>Instagram</small><strong>@yusf4u</strong></span></a>
-      <a class="contact-card" href="https://behance.net/yusf4u" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M7.799 5.698c.589 0 1.12.051 1.606.156.482.107.894.28 1.241.525.344.243.612.564.804.966.19.4.284.873.284 1.418 0 .608-.139 1.12-.418 1.534-.28.412-.683.754-1.209 1.028.73.21 1.275.585 1.633 1.127.361.54.54 1.191.54 1.955 0 .596-.12 1.113-.355 1.55-.237.436-.558.795-.963 1.078a4.24 4.24 0 01-1.39.62 6.3 6.3 0 01-1.618.206H2V5.698h5.799zm-.29 4.998c.46 0 .836-.109 1.128-.33.29-.22.437-.567.437-1.04 0-.27-.05-.492-.147-.67a1.12 1.12 0 00-.394-.42 1.69 1.69 0 00-.58-.224 3.298 3.298 0 00-.7-.07H4.341v2.754h3.168zm.157 5.237c.267 0 .52-.027.758-.08.24-.054.45-.143.626-.267.178-.125.32-.292.424-.5.104-.211.156-.475.156-.795 0-.632-.18-1.085-.535-1.357-.358-.271-.83-.407-1.415-.407H4.341v3.406h3.325zm9.768.378c.36.351.878.526 1.555.526.484 0 .902-.12 1.255-.365.35-.244.566-.504.646-.782h2.15c-.343 1.077-.87 1.845-1.575 2.303-.706.457-1.561.686-2.56.686-.695 0-1.32-.111-1.877-.336a4.084 4.084 0 01-1.424-.962 4.38 4.38 0 01-.907-1.488c-.214-.578-.32-1.212-.32-1.9 0-.666.109-1.288.326-1.868a4.44 4.44 0 01.924-1.488 4.208 4.208 0 011.428-.982c.555-.236 1.167-.354 1.837-.354.748 0 1.407.145 1.974.436.566.29 1.034.681 1.402 1.174.368.493.633 1.057.793 1.693.162.635.214 1.3.159 1.993h-6.402c.031.763.25 1.302.616 1.714zm2.706-4.737c-.29-.32-.744-.48-1.36-.48-.393 0-.72.066-.982.2a2.03 2.03 0 00-.636.507 1.89 1.89 0 00-.34.657 2.926 2.926 0 00-.107.679h4.046c-.086-.7-.332-1.243-.621-1.563zM15.5 7h4.5v1.2H15.5V7z"/>
-    </svg></span><span class="ct"><small>Behance</small><strong>yusf4u</strong></span></a>
-      <a class="contact-card" href="https://linkedin.com/in/yusfmohamed" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M20.447 20.452H16.89v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a1.98 1.98 0 01-1.977-1.98c0-1.093.885-1.98 1.977-1.98s1.977.887 1.977 1.98a1.98 1.98 0 01-1.977 1.98zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-    </svg></span><span class="ct"><small>LinkedIn</small><strong>yusfmohamed</strong></span></a>
-      <a class="contact-card" href="https://github.com/yusfmohamed" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-    </svg></span><span class="ct"><small>GitHub</small><strong>yusfmohamed</strong></span></a>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <p>&copy; <span id="year">2026</span> Youssef Mohamed — Graphic Designer &amp; Software Engineer</p>
-  </div>
-</footer>
-
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
-  <button class="lb-btn lb-close" type="button" aria-label="Close">✕</button>
-  <button class="lb-btn lb-prev" type="button" aria-label="Previous image">‹</button>
-  <button class="lb-btn lb-next" type="button" aria-label="Next image">›</button>
-  <figure class="lb-stage"><img id="lb-img" alt=""><figcaption><span id="lb-cap"></span><span id="lb-count"></span></figcaption></figure>
-</div>
-
-<script src="app.js" defer></script>
-<script src="theme.js" defer></script>
-</body>
+    <script src="app.js" defer></script>
+  </body>
 </html>
